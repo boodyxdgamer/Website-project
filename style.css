@@ -50,7 +50,8 @@
     font-weight: bold;
     color: black; /* Text color of the button */
     background-color: #ffd700;
-    border-radius: 5px; /* Rounds the corners of the button */
+    border: none;
+    border-radius: 10px; /* Rounds the corners of the button */
     font-size: 22px; /* Sets the font size of the button text */    
     text-align: center; /* Centers the text within the button */
 }
