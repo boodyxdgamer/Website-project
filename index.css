@@ -1,0 +1,171 @@
+body {
+    font-family: sans-serif;
+    background-color: #005bea;
+    color: #000;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.container {
+    max-width: 100%;
+    background-color: #fff;
+    margin:0 ;
+    padding: 50px;;
+    border-radius: 20px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #000000;
+}
+
+.section-title {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #444;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-size: 16px;
+}
+
+textarea {
+    resize: vertical;
+}
+#reset,#submit {
+    background-color: #ffd700;
+    color: rgb(0, 0, 0);
+    padding: 8px;
+    border: none;
+    border-radius: 20px;
+    font-size: 15px;
+    width: 17%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+#reset:hover {
+    background-color: #dfe6c1;
+}
+#submit:hover {
+    background-color: #dfe6c1;
+}
+#theme:hover {
+    background-color: #dfe6c1;
+
+}
+#theme{
+    background-color: #ffd700;
+    color: rgb(0, 0, 0);
+    padding: 8px;
+    border: none;
+    border-radius: 20px;
+    font-size: 15px;
+    width: 13%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: block;
+    margin-left: auto;
+    margin-right: 0;
+}
+
+
+
+
+body.dark-mode {
+    background-color: #000000;
+}
+
+body.dark-mode .container {
+    background-color: #151414;
+    color: white;
+    border-color: #000000;
+}
+
+body.dark-mode input,
+body.dark-mode textarea {
+    background-color: #1d1c1c;
+    color: white;
+    border-color: #ffffff;
+}
+
+body.dark-mode button {
+    background-color: #444;
+    color: white;
+}
+
+body.dark-mode button:hover {
+    background-color: #666;
+}
+body.dark-mode h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #ffffff;
+}
+body.dark-mode #theme{
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 8px;
+    border: none;
+    border-radius: 20px;
+    font-size: 15px;
+    width: 13%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: block;
+    margin-left: auto;
+    margin-right: 0;
+}
+body.dark-mode #productType {
+    background-color: #1d1c1c;
+    color: white;
+}
+body.dark-mode #submit {
+    background-color: #ededed;
+    color: rgb(0, 0, 0);
+    padding: 8px;
+    border: none;
+    border-radius: 20px;
+    font-size: 15px;
+    width: 17%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+body.dark-mode #reset {
+    background-color: #ededed;
+    color: rgb(0, 0, 0);
+    padding: 8px;
+    border: none;
+    border-radius: 20px;
+    font-size: 15px;
+    width: 17%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+body.dark-mode #reset:hover {
+    background-color: #484742;
+}
+body.dark-mode #submit:hover {
+    background-color: #484742;
+}
+body.dark-mode #theme:hover {
+    background-color: #484742;
+
+}
