@@ -1,0 +1,71 @@
+body{
+    background-color: rgba(244, 240, 234, 0.696);
+}
+.d1{
+    width: 700px;
+    overflow: auto;
+    display: flex;
+    float: left; 
+
+}
+.d2{
+float: center;
+background-color: white;
+height: 400px;
+margin-top: 200px;
+margin-left: 750px;
+padding-left: 20px;
+padding-top: 10px;
+
+}
+
+.main,.main2,.main3{
+    border: white 50px solid;
+}
+
+
+
+/*--------------------------------------------*/
+.main-header {
+    background-color:#005bea; 
+    color: white;
+    text-align: center;
+    font-family: Roboto ;
+    font-weight: bold;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin-top: 30px; 
+}
+.announcement-bar {
+    position: fixed; /* Makes it stick to top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #ffd700;
+    color: black;
+    padding: 4px 0; /* Adds padding to the top and bottom */
+    text-align: center;
+    align-items: center;
+    font-weight: bolder;
+    height: 30px; /* Sets the height of the announcement bar */
+    font-family: poppins, sans-serif;
+    font-size: 14px;
+    overflow: hidden; /* Hides text that scrolls outside */
+  }
+  .scrolling-text {
+    display: inline-block;
+    white-space: nowrap; /* Keeps text in one line */
+    padding-left: 100%; /* Starts off-screen */
+    animation: scroll 20s linear infinite;
+  }
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%); /* Moves left */
+    }
+  }
+  
