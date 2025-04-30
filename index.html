@@ -30,10 +30,22 @@
     <label for="phone">Mobile number</label>
     <input type="tel" id="phone" name="phone" required pattern="[0-9]{10,15}" placeholder="01234567890" minlength="11" maxlength="11">
         <hr>
+    <label for="Payment">Visa Card</label>
+    <input type="text" id="Payment" required` placeholder="0000 0000 0000 0000" minlength="16" maxlength="19">
+    <label for="Valid_EXP">Card Valid EXP</label>
+    <input type="datetime" id="Valid_EXP" required placeholder="00/00" maxlength="5">
+    <label for="cvv">CVV</label>
+    <input type="text" id="cvv" required placeholder="123" minlength="3" maxlength="3">
+
+
+
     <button id="submit" type="submit">Submit</button>
     <button id="reset" type="reset">Reset</button>
     </form>
     </div>
+
+
+
     <script>
         const toggleBtn = document.getElementById('theme');
     
