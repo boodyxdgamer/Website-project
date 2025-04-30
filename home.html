@@ -9,27 +9,33 @@
     <title>Invincible Store</title>
    
 </head>
-<body>
+<body >
     <div class="announcement-bar" ><div  class="scrolling-text">
         🚨Limited Time Offer: 15% Off All Controllers! Use Code: <strong>INVINCIBLE15</strong> 
   </div> 
+  
 </div>
     <header class="main-header">
-        <h1>Invincible Store</h1>
+        <h1>Invincible Store</h1> 
         <p>Find the best products at unbeatable prices!</p>
+         
+        <button id="theme" class = "themebutton" ></button>
     </header>
 
-        
-        <h1 style="text-align: center ;padding: 20px;" >Featured Products</h1>
-        <br>
+    <br>
+    
+    <h1 class="title" >Featured Products</h1>
+    <br>
         <section style="text-align: center;"  >
            
+            
+          
             
                 <div class="catigory">
 
                         <h2>Console</h2>
                         <a href="console.html" width ><img  src="images/Console.png" width="300" alt="Console" class="catigory-img"></a>
-                        <button  class="shopbutton" onclick="window.location.href='#'"  >Shop now</button >
+                        <button  class="shopbutton" onclick="window.location.href='console.html'"  >Shop now</button >
                    
                     
                 </div>
@@ -52,7 +58,7 @@
         <br>
 
 
-        <footer class="footer"> 
+        <footer class="footer" type = "footer"> 
             <p class="footer-text">© 2025 E-Shop. All rights reserved.</p>
             <div class="social-links">
                 <a href="#" class="social-link">Facebook</a>
@@ -61,5 +67,12 @@
                
             </div>
         </footer>
+        <script>
+               const toggleBtn = document.getElementById('theme');
+    
+          toggleBtn.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+            });
+        </script>
 </body>
 </html>
