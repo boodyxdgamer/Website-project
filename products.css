@@ -1,5 +1,5 @@
 body{
-    background-color: rgba(244, 240, 234, 0.696);
+    background-color:black;
 }
 .d1{
     width: 700px;
@@ -10,17 +10,19 @@ body{
 }
 .d2{
 float: center;
-background-color: white;
+background-color:rgba(255, 255, 255, 0);
 height: 400px;
-margin-top: 200px;
+margin-top: 150px;
 margin-left: 750px;
 padding-left: 20px;
-padding-top: 10px;
-
+padding-top: 0px;
+border-radius: 10px;
 }
-
 .main,.main2,.main3{
     border: white 50px solid;
+}
+.deld{
+  color: rgba(16, 2, 2, 0.563);
 }
 
 
@@ -167,4 +169,31 @@ font-weight: bold;
   border-radius: 20px;
   background-color: hsl(203, 100%, 64%);
   color:hsl(120, 84%, 65%);
+}
+body.dark-mode .d2{
+  float: center;
+background-color: black;
+height: 400px;
+margin-top: 150px;
+margin-left: 750px;
+padding-left: 20px;
+padding-top: 0px;
+}
+body.dark-mode .deld{
+  color: rgba(255, 255, 255, 0.644);
+}
+body.dark-mode .main{
+  border: black 50px solid;
+}
+body.dark-mode .main2{
+  border: black 50px solid;
+}
+body.dark-mode .main3{
+  border: black 50px solid;
+}
+body.dark-mode .d1{
+    width: 700px;
+    overflow: auto;
+    display: flex;
+    float: left; 
 }
