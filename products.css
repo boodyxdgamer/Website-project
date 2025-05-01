@@ -20,7 +20,19 @@ border-radius: 10px;
 .deld{
   color: rgba(16, 2, 2, 0.563);
 }
-
+.but{
+  margin-top: 10px;
+  background-color: #ffd700 ;
+  color: black;
+  font-family: Roboto;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px; 
+  font-size: 22px;  
+  text-align: center;
+  cursor: pointer;
+  
+}
 
 /*--------------------------------------------*/
 .main-header {
