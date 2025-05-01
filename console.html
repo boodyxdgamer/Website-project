@@ -8,12 +8,14 @@
 
 </header>
 <body >
+  
   <div class="announcement-bar" ><div  class="scrolling-text">
     🚨Limited Time Offer: 15% Off All Controllers! Use Code: <strong>INVINCIBLE15</strong> 
 </div> 
 
 </div>
 <header class="main-header">
+  <button id="theme">Switch Theme</button>
   <nav class="nav">
     <div>
         <h2 class="f1"><a href="home.html" title="takes you to the Home page">Home</a></h2>
@@ -25,8 +27,6 @@
 </nav>
   <h1>Invincible Store</h1> 
     <p>Find the best products at unbeatable prices!</p>
-     
-    <button id="theme" class = "themebutton" ></button>
 </header>
 
 
@@ -43,10 +43,16 @@
      <h1>PLAYSTATION 5</h1>
       <p>SONY</p>
       <hr>
-      <p>price: <strong style="color: red;"> 34000</strong> <del style="color: rgba(16, 2, 2, 0.563);">40000</del> </p>
+      <p>price: <strong style="color: red;"> 34000</strong> <del class="deld">40000</del> </p>
     <label for="num">   Quantity : </label> 
-    <input id="num" type="number" min="1" max="5"  default="1" >
+    <input id="num" type="number" min="1" max="10" placeholder="1">
+    <br>
+    <a href="index.html"><button class="but">ORDER NOW</button></a>
     </div>
+
+
+
+    
     <script>
       const toggleBtn = document.getElementById('theme');
     
