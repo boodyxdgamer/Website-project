@@ -37,7 +37,7 @@ padding-top: 10px;
   left: 0;
   width: 100%;
   margin-top: 30px; 
-  height: 15%;
+  height: 20%;
 }
 .announcement-bar {
     position: fixed; /* Makes it stick to top */
@@ -143,4 +143,28 @@ padding: 10px; /* Adds padding around the text in the footer */
 font-family: Roboto;
 font-weight: bold;
 
+}
+.nav div h2{
+  float: left;
+}
+.f2{
+  margin-left: 25%;
+}
+.f3{
+  margin-left: 25%;
+}
+.f4{
+  margin-left: 25%;
+}
+.nav a{
+  color:black;
+  border: 3px solid green;
+  border-radius: 13px;
+  text-decoration: none;
+}
+.nav a:hover{
+  border: 5px solid yellow;
+  border-radius: 20px;
+  background-color: hsl(203, 100%, 64%);
+  color:hsl(120, 84%, 65%);
 }

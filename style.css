@@ -10,7 +10,7 @@
   left: 0;
   width: 100%;
   margin-top: 30px; 
-  height: 15%;
+  height: 20%;
 }
 .main-header.dark-mode {
   background-color:#005bea; 
@@ -132,8 +132,6 @@ body.dark-mode {
 }
 
 /* Smooth transitions */
-body {
-  
 
 
 /* ANNOUNCEMENT BAR */
@@ -219,4 +217,28 @@ body.dark-mode .title{
   text-indent: 9%; 
   font-family: Roboto ;  
   color: #ffffff;
+}
+.nav div h2{
+  float: left;
+}
+.f2{
+  margin-left: 25%;
+}
+.f3{
+  margin-left: 25%;
+}
+.f4{
+  margin-left: 25%;
+}
+.nav a{
+  color:black;
+  border: 3px solid green;
+  border-radius: 13px;
+  text-decoration: none;
+}
+.nav a:hover{
+  border: 5px solid yellow;
+  border-radius: 20px;
+  background-color: hsl(203, 100%, 64%);
+  color:hsl(120, 84%, 65%);
 }
