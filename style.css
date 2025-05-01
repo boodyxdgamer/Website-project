@@ -135,6 +135,14 @@ body {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+#theme:hover {
+  background-color: #dfe6c1; 
+}
+
+body.dark-mode #theme:hover {
+  background-color: #484742;
+  color: #f5f5f5;
+}
 
 /* Dark mode styles */
 body.dark-mode {
