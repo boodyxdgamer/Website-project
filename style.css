@@ -190,6 +190,7 @@ body.dark-mode {
     display: block;
     margin-left: auto;
     margin-right: 0;
+    margin-top: 5px;
   }
 body.dark-mode .themebutton {
   background-color: #ffffff;
@@ -204,12 +205,15 @@ body.dark-mode .themebutton {
   display: block;
   margin-left: auto;
   margin-right: 0;
+  margin-top: 5px;
 }
 .title{
   
   text-indent: 9%; 
   font-family: Roboto ;  
   color: #000000;
+  text-align: center;
+  margin-right: 150px;
   
 }
 body.dark-mode .title{
@@ -231,7 +235,7 @@ body.dark-mode .title{
   margin-left: 25%;
 }
 .nav a{
-  color:black;
+  color:rgb(228, 228, 223);
   border: 3px solid green;
   border-radius: 13px;
   text-decoration: none;

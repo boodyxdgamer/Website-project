@@ -86,43 +86,35 @@ padding-top: 10px;
   }
   
  
-  .themebutton {
-    cursor: pointer;
+  #theme{
+    background-color: #ffd700;
+    color: rgb(0, 0, 0);
+    padding: 8px;
     border: none;
-    background: transparent;
-    padding: 0;
+    border-radius: 20px;
+    font-size: 15px;
+    width: 13%;
     cursor: pointer;
-   
-    /* Set dimensions (adjust to your image size) */
-    width: 50px;
-    height: 50px;
-    border-radius: 100px;
-  
-    /* Replace text with an image */
-    background-image: url('Images/moon.jpg');
-    background-size: cover;       /* Ensures image covers the button */
-    background-position: center;  /* Centers the image */
-    
-  
-  }
-body.dark-mode .themebutton {
-  cursor: pointer;
+    transition: background-color 0.3s;
+    display: block;
+    margin-left: auto;
+    margin-right: 0;
+    margin-top: 5px;
+}
+body.dark-mode #theme{
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  padding: 8px;
   border: none;
-  background: transparent;
-  padding: 0;
+  border-radius: 20px;
+  font-size: 15px;
+  width: 13%;
   cursor: pointer;
- 
-  /* Set dimensions (adjust to your image size) */
-  width: 50px;
-  height: 50px;
-  border-radius: 100px;
-
-  /* Replace text with an image */
-  background-image: url('Images/sun.jpg');
-  background-size: cover;       /* Ensures image covers the button */
-  background-position: center;  /* Centers the image */
- 
-
+  transition: background-color 0.3s;
+  display: block;
+  margin-left: auto;
+  margin-right: 0;
+  margin-top: 5px;
 }
 .footer {
   margin-top: 120px;
