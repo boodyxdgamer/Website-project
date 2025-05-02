@@ -235,9 +235,8 @@ body.dark-mode .themebutton {
 }
 .heading{
   font-family: Roboto ,sans-serif;
-  
+  color: #000000;
   text-align: center;
-  margin-right: 150px;
   margin-top: 35px;
   
 }
