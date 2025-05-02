@@ -11,12 +11,24 @@
     <h2>Delivery information</h2>
         <hr>
     <form>
-    <label for="productType">Type of product</label>
-    <select id="productType" name="productType" required placeholder="Console,Accessories,Games" >
-        <option value="Console">PlayStation 5 slim</option>
-        <option value="Accessories">PlayStation 5 pro</option>
-        <option value="Games">2020 New Xbox</option>
-    </select>
+        <label for="device">Type Of Product</label>
+        <select name="device" id="device">
+        <optgroup label="Console">
+        <option>PlayStation 5 slim</option>
+        <option>PlayStation 5 pro</option>
+        <option>2020 New Xbox</option>
+        </optgroup>
+        <optgroup label="Accessories">
+        <option>PS5 Controller</option>
+        <option>Controller Charging Station</option>
+        <option>PlayStation VR2</option>
+        </optgroup>
+        <optgroup label="Games">
+        <option>FC 25</option>
+        <option>Rocket League</option>
+        <option>Red Dead Redemption 2</option>
+        </optgroup>
+        </select>
         <hr>
     <label for="fullName">Full name</label>
     <input type="text" id="fullName" name="fullName" required placeholder="Smith" title="Enter Your Full Name">
