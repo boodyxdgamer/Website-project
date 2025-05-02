@@ -186,10 +186,11 @@ body.dark-mode .main{
 
 }
 body.dark-mode .d1{
-    width: 700px;
-    overflow: auto;
-    display: flex;
-    float: left; 
+  width: auto;
+  overflow: auto;
+  display: flex;
+  float: left; 
+  margin-right: 50px;
 }
 body.dark-mode #num{
   background-color: black;

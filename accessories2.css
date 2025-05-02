@@ -188,10 +188,13 @@ body.dark-mode .main{
 
 }
 body.dark-mode .d1{
-    width: 700px;
-    overflow: auto;
-    display: flex;
-    float: left; 
+  width: auto;
+  overflow: auto;
+  display: flex;
+  float: left; 
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-right: 100px;
 }
 body.dark-mode #num{
   background-color: black;
