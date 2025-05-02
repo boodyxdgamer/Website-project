@@ -42,15 +42,19 @@
     <input type="email" id="email" name="email" required placeholder="abcdefghi@gmail.com"title="Enter Correct Email">
         <hr>
     <label for="phone" class="NameOf">Mobile number</label>
-    <input type="tel" id="phone" name="phone" required pattern="[0-9]{10,15}" placeholder="01234567890" minlength="11" maxlength="11"title="Enter Correct Mobile Number">
+    <input type="tel" id="phone" name="phone" required  placeholder="01234567890" minlength="11" maxlength="11"title="Enter Correct Mobile Number">
         <hr>
+        <label for="code" class="NameOf">Discount code</label>
+        <input type="text" id="code" name="code"  placeholder="FCAI-H (optional)" title="Enter discount code">
+            <hr>
     <label for="Payment" class="NameOf">Visa Card</label>
     <input type="text" id="Payment" required` placeholder="0000 0000 0000 0000" minlength="16" maxlength="19"title="Enter Correct Visa Card Number">
+    <hr>
     <label for="Valid_EXP" class="NameOf">Card Valid EXP</label>
     <input type="datetime" id="Valid_EXP" required placeholder="00/00" maxlength="5"title="Enter a Vaild EXP">
+    <hr>
     <label for="cvv" class="NameOf">CVV</label>
     <input type="text" id="cvv" required placeholder="123" minlength="3" maxlength="3"title="Enter Your Correct CVV">
-
 
 
     <button id="submit" type="submit">Submit</button>
