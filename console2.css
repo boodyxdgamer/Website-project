@@ -136,6 +136,11 @@ body.dark-mode #theme{
   background-color: #dfe6c1;
 }
 
+body.dark-mode #theme:hover {
+  background-color: #484742;
+  color: #f5f5f5;
+}
+
 .footer {
   margin-top: 180px;
   background-color: #b1c8f7; /* Sets the background color of the footer */
@@ -212,8 +217,4 @@ body.dark-mode #num{
   color: white;
 }
 
-body.dark-mode #theme:hover {
-  background-color: #484742;
-  color: #f5f5f5;
-}
 
