@@ -238,6 +238,8 @@ body.dark-mode .themebutton {
   font-family: Roboto ,sans-serif;
   
   text-align: center;
+  margin-right: 150px;
+  margin-top: 35px;
   
 }
 body.dark-mode .title{

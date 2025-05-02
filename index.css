@@ -86,10 +86,10 @@ textarea {
 }
 
 .footer {
-    background-color: #b1c8f7; /* Sets the background color of the footer */
-    color: white; /* Sets the text color of the footer */
-    text-align: center; /* Centers the text in the footer */
-    padding: 10px; /* Adds padding around the text in the footer */
+    background-color: #b1c8f7;
+    color: white;
+    text-align: center;
+    padding: 10px;
     font-family: Roboto;
     font-weight: bold;
     width: 100%;
@@ -116,11 +116,6 @@ body.dark-mode textarea {
     border-color: #ffffff;
 }
 
-body.dark-mode button {
-    background-color: #444;
-    color: white;
-}
-
 body.dark-mode button:hover {
     background-color: #666;
 }
@@ -143,10 +138,7 @@ body.dark-mode #theme{
     margin-left: auto;
     margin-right: 0;
 }
-body.dark-mode #productType {
-    background-color: #1d1c1c;
-    color: white;
-}
+
 body.dark-mode #submit {
     background-color: #ededed;
     color: rgb(0, 0, 0);
@@ -172,9 +164,11 @@ body.dark-mode #reset {
 }
 body.dark-mode #reset:hover {
     background-color: #484742;
+    color: #f5f5f5;
 }
 body.dark-mode #submit:hover {
     background-color: #484742;
+    color: #f5f5f5;
 }
 body.dark-mode #theme:hover {
     background-color: #484742;
@@ -190,4 +184,13 @@ body.dark-mode .footer {
     font-weight: bold;
     width: 100%;
     
+}
+
+body.dark-mode .NameOf {
+    color: #f5f5f5 ;
+}
+
+body.dark-mode #devices {
+    background-color: #1d1c1c;
+    color: #f5f5f5;
 }

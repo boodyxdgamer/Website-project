@@ -11,30 +11,44 @@
     <h2>Delivery information</h2>
         <hr>
     <form>
-    <label for="productType">Type of product</label>
-    <select id="productType" name="productType" required placeholder="Console,Accessories,Games" >
-        <option value="Console">Console</option>
-        <option value="Accessories">Accessories</option>
-        <option value="Games">Games</option>
-    </select>
+            <div class="Products">
+        <label for="device" class="NameOf">Type of product</label>
+        <select name="device" id="devices">
+        <optgroup label="Console">
+        <option>PlayStation 5 slim</option>
+        <option>PlayStation 5 pro</option>
+        <option>2020 New Xbox</option>
+        </optgroup>
+        <optgroup label="Accessories">
+        <option>PS5 Controller</option>
+        <option>Controller Charger</option>
+        <option>PlayStation VR2</option>
+        </optgroup>
+        <optgroup label="Games">
+        <option>FC 25</option>
+        <option>Rocket League</option>
+        <option>Red Dead Redemption 2</option>
+        </optgroup>
+        </select>
+            </div>
         <hr>
-    <label for="fullName">Full name</label>
+    <label for="fullName" class="NameOf">Full name</label>
     <input type="text" id="fullName" name="fullName" required placeholder="Smith" title="Enter Your Full Name">
         <hr>
-    <label for="address">address</label>
+    <label for="address" class="NameOf">address</label>
     <textarea id="address" name="address" rows="3" required placeholder="Egypt Cairo 25 Street" title="Enter Your address"></textarea>
         <hr>
-    <label for="email">E-mail</label>
+    <label for="email" class="NameOf">E-mail</label>
     <input type="email" id="email" name="email" required placeholder="abcdefghi@gmail.com"title="Enter Correct Email">
         <hr>
-    <label for="phone">Mobile number</label>
+    <label for="phone" class="NameOf">Mobile number</label>
     <input type="tel" id="phone" name="phone" required pattern="[0-9]{10,15}" placeholder="01234567890" minlength="11" maxlength="11"title="Enter Correct Mobile Number">
         <hr>
-    <label for="Payment">Visa Card</label>
+    <label for="Payment" class="NameOf">Visa Card</label>
     <input type="text" id="Payment" required` placeholder="0000 0000 0000 0000" minlength="16" maxlength="19"title="Enter Correct Visa Card Number">
-    <label for="Valid_EXP">Card Valid EXP</label>
+    <label for="Valid_EXP" class="NameOf">Card Valid EXP</label>
     <input type="datetime" id="Valid_EXP" required placeholder="00/00" maxlength="5"title="Enter a Vaild EXP">
-    <label for="cvv">CVV</label>
+    <label for="cvv" class="NameOf">CVV</label>
     <input type="text" id="cvv" required placeholder="123" minlength="3" maxlength="3"title="Enter Your Correct CVV">
 
 
