@@ -1,21 +1,22 @@
 .d1{
-    width: 700px;
+    width: auto;
     overflow: auto;
     display: flex;
     float: left; 
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 100px;
 }
 .d2{
 float: center;
-background-color:rgba(255, 255, 255, 0);
+background-color:white;
 height: 400px;
+width: 80%;
 margin-top: 150px;
-margin-left: 750px;
-padding-left: 20px;
-padding-top: 0px;
 border-radius: 10px;
 }
-.main,.main2,.main3{
-    border: white 50px solid;
+.main{
+    border: white 10px solid;
 }
 .deld{
   color: rgba(16, 2, 2, 0.563);
@@ -175,23 +176,16 @@ body.dark-mode .d2{
   float: center;
 background-color: black;
 height: 400px;
+width: 80%;
 margin-top: 150px;
-margin-left: 750px;
-padding-left: 20px;
-padding-top: 0px;
 border-radius: 10px;
 }
 body.dark-mode .deld{
   color: rgba(255, 255, 255, 0.644);
 }
 body.dark-mode .main{
-  border: black 50px solid;
-}
-body.dark-mode .main2{
-  border: black 50px solid;
-}
-body.dark-mode .main3{
-  border: black 50px solid;
+  border: black 10px solid;
+
 }
 body.dark-mode .d1{
     width: 700px;
