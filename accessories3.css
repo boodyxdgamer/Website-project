@@ -1,21 +1,21 @@
 .d1{
-    width: 700px;
+    width: auto;
     overflow: auto;
     display: flex;
     float: left; 
+    margin-left: 50px;
+    margin-right: 100px;
 }
 .d2{
 float: center;
-background-color:rgba(255, 255, 255, 0);
+background-color:white;
 height: 400px;
+width: 80%;
 margin-top: 150px;
-margin-left: 750px;
-padding-left: 20px;
-padding-top: 0px;
 border-radius: 10px;
 }
-.main,.main2,.main3{
-    border: white 50px solid;
+.main{
+    border: white 10px solid;
 }
 .deld{
   color: rgba(16, 2, 2, 0.563);
@@ -35,7 +35,6 @@ border-radius: 10px;
 }
 
 /*--------------------------------------------*/
-/* Light theme for the header */
 .main-header {
   background-color:#005bea; 
   color: white;
@@ -43,25 +42,6 @@ border-radius: 10px;
   font-family: Roboto ;
   font-weight: bold;
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  margin-top: 30px; 
-  height: 18%;
-}
-.main-header h1 {
-  display: inline-block;
-  margin-left: 11%;
-  margin-top: 10px; 
-}
-.main-header.dark-mode {
-  background-color:#005bea; 
-  color: white;
-  text-align: center;
-  font-family: Roboto ;
-  font-weight: bold;
-  position: fixed;
-  
   top: 0;
   left: 0;
   width: 100%;
@@ -113,9 +93,7 @@ border-radius: 10px;
     background-color: #121212;
     color: #f5f5f5;
   }
-  .themebutton {
-    display: inline-block;
-    float: right;
+  #theme{
     background-color: #ffd700;
     color: rgb(0, 0, 0);
     padding: 8px;
@@ -129,23 +107,26 @@ border-radius: 10px;
     margin-left: auto;
     margin-right: 0;
     margin-top: 5px;
-  }
-  body.dark-mode .themebutton {
-    background-color: #ffffff;
-    color: rgb(0, 0, 0);
-    padding: 8px;
-    border: none;
-    border-radius: 20px;
-    font-size: 15px;
-    width: 13%;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    display: block;
-    margin-left: auto;
-    margin-right: 0;
-    margin-top: 5px;
-  }
+}
+body.dark-mode #theme{
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  padding: 8px;
+  border: none;
+  border-radius: 20px;
+  font-size: 15px;
+  width: 13%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: block;
+  margin-left: auto;
+  margin-right: 0;
+  margin-top: 5px;
+}
 
+#theme:hover {
+  background-color: #dfe6c1;
+}
 
 .footer {
   margin-top: 180px;
@@ -169,53 +150,49 @@ font-weight: bold;
 .nav div h2{
   float: left;
 }
+.f2{
+  margin-left: 25%;
+}
+.f3{
+  margin-left: 25%;
+}
+.f4{
+  margin-left: 25%;
+}
 .nav a{
-  color:rgb(228, 228, 223);
+  color:white;
+  border: 3px solid green;
+  border-radius: 13px;
   text-decoration: none;
-  padding: 7px;
-  padding-left: 12px;
-  padding-right: 12px;
-  
 }
 .nav a:hover{
-  padding: 7px;
-  padding-left: 12px;
-  padding-right: 12px;
-  border-radius: 5px;
-  background-color: hsl(203, 100%, 27%);
-  color:hsl(0, 0%, 100%);
-}
-.nav{
-  display: inline-block;
-  text-align: center;
+  border: 5px solid yellow;
+  border-radius: 20px;
+  background-color: hsl(203, 100%, 64%);
+  color:hsl(120, 84%, 65%);
 }
 body.dark-mode .d2{
   float: center;
 background-color: black;
 height: 400px;
+width: 80%;
 margin-top: 150px;
-margin-left: 750px;
-padding-left: 20px;
-padding-top: 0px;
 border-radius: 10px;
 }
 body.dark-mode .deld{
   color: rgba(255, 255, 255, 0.644);
 }
 body.dark-mode .main{
-  border: black 50px solid;
-}
-body.dark-mode .main2{
-  border: black 50px solid;
-}
-body.dark-mode .main3{
-  border: black 50px solid;
+  border: black 10px solid;
+
 }
 body.dark-mode .d1{
-    width: 700px;
-    overflow: auto;
-    display: flex;
-    float: left; 
+  width: auto;
+  overflow: auto;
+  display: flex;
+  float: left; 
+  margin-left: 50px;
+  margin-right: 100px;
 }
 body.dark-mode #num{
   background-color: black;
