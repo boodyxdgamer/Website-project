@@ -43,7 +43,7 @@
   }
   .catigory {
       display: inline-block;
-      vertical-align: ;
+      vertical-align: top;
       align-items: center; /* Centers content horizontally within each category */
       text-align: center; /* Centers text */
       border: #005bea 2px solid; /* Adds border around each category */

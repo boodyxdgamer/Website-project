@@ -46,16 +46,31 @@
         <hr>
         <label for="code" class="NameOf">Discount code</label>
         <input type="text" id="code" name="code"  placeholder="FCAI-H (optional)" title="Enter discount code">
-            <hr>
-    <label for="Payment" class="NameOf">Visa Card</label>
-    <input type="number" id="Payment" required` placeholder="0000 0000 0000 0000" minlength="16" maxlength="19"title="Enter Correct Visa Card Number">
-    <hr>
-    <label for="Valid_EXP" class="NameOf">Card Valid EXP</label>
-    <input type="datetime" id="Valid_EXP" required placeholder="00/00" maxlength="5"title="Enter a Vaild EXP">
-    <hr>
-    <label for="cvv" class="NameOf">CVV</label>
-    <input type="tel" id="cvv" required placeholder="123" minlength="3" maxlength="3" title="Enter Your Correct CVV">
-
+        <hr>
+        <h2>Choose Payment Method</h2>
+        <hr>
+        <div class="payment-option">
+            <label for="cash" class="cash">Cash</label>
+            <input type="radio" name="payment" id="cash">
+        </div>
+        
+        <div class="payment-option">
+            <label for="visa" class="visa">Visa</label>
+            <input type="radio" name="payment" id="visa">
+            
+            
+            <div class="visa-show">
+                <label for="Payment">Visa Card</label>
+                <input type="number" id="Payment" required placeholder="0000 0000 0000 0000" minlength="16" maxlength="19" title="Enter Correct Visa Card Number">
+                <hr>
+                <label for="Valid_EXP">Card Valid EXP</label>
+                <input type="datetime" id="Valid_EXP" required placeholder="MM/YY" maxlength="5" title="Enter a Valid EXP">
+                <hr>
+                <label for="cvv">CVV</label>
+                <input type="tel" id="cvv" required placeholder="123" minlength="3" maxlength="3" title="Enter Your Correct CVV">
+            </div>
+        </div>
+        
 
     <button id="submit" type="submit">Submit</button>
     <button id="reset" type="reset">Reset</button>
