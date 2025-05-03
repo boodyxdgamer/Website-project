@@ -87,14 +87,7 @@
   const form = document.querySelector("#contact-form form");
 
   form.addEventListener("submit", function (event) {
-      event.preventDefault(); 
-
-      const name = document.getElementById("name").value.trim();
-      const email = document.getElementById("email").value.trim();
-      const phone = document.getElementById("phone_number").value.trim();
-      const subject = document.getElementById("subject").value.trim();
-      const message = document.getElementById("message").value.trim();
-
+      event.preventDefault();
       
       if (!name || !email || !phone || !subject || !message) {
           alert("Please fill in all the fields.");
