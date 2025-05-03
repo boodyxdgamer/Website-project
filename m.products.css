@@ -74,6 +74,14 @@
       width: auto; /* Sets the width of the image */
       height: auto; /* Sets the height of the image */
   }
+   
+  .catigory-imggg {
+      
+    margin-bottom: 10px; /* Adds space between image and button */
+    display: block; /* Ensures the image is treated as a block element */
+    width: auto; /* Sets the width of the image */
+    height: 510px; /* Sets the height of the image */
+  }
   .catigory-imgg {
       
     margin-bottom: 10px; /* Adds space between image and button */
