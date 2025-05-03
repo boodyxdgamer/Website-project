@@ -272,3 +272,71 @@ body.dark-mode .title{
   display: inline-block;
   text-align: center;
 }
+
+/* feedback page css */
+
+/* Contact */
+#contact {
+  padding-left: 350px; 
+  padding-top: 150px;
+  font-family : Roboto, sans-serif;
+  font-weight: bold;  
+  font-size : 26px;
+}
+
+/* Contact Information */
+.contact-info {
+  font-size: 18px;
+  color: #111;
+}
+
+.contact-info ul {
+  padding-left: 30px;
+}
+
+.contact-info li {
+  padding-bottom: 30px;
+}
+
+/* Contact Form */
+
+#contact-form {
+  margin-top: -11%;
+  margin-bottom: 15%;
+  padding-left: 175px;
+} 
+
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form input[type="tel"],
+#contact-form textarea {
+  width: 20%;
+  padding: 10px;
+  font-size: 10 px;
+  border: 1px solid #c7c7c7;
+  box-sizing: border-box;
+  margin-left: 60%;
+}
+
+#contact-form textarea {
+  height: 200px;
+  resize: vertical;
+}
+
+#contact-form input[type="submit"] {
+  background-color : #000000;
+  color: #ffffff;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top:10px;
+  font: roboto, sans-serif;
+  border: none;
+  cursor: pointer;
+  margin-left:60%;
+}
+
+#contact-form input[type="submit"]:hover {
+  background-color: #333;
+}
