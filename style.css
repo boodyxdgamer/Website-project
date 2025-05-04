@@ -280,9 +280,19 @@ body.dark-mode .heading {
   display: flex;
   width: 70%;
 }
+.srchcard{
+  margin: 0px auto;
+  background: linear-gradient(to right ,#14aed4 ,#07d888);
+  align-content: center;
+  justify-content: center;
+  border-radius: 15px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+  display: flex;
+  width: 70%;
+}
 .srchform{
   display:flex;
-
+  
   width: 100%;
 }
 .srch{
@@ -296,12 +306,28 @@ body.dark-mode .heading {
   border-radius: 30px;
   height: 50px;
 
+  
+
+
+}
+body.dark-mode .srch{
+  font-size: 14px;
+  font-family:'Arial' ,sans-serif ;
+  padding: 8px ;
+  display: flex;
+  border: 1px solid #ccc;
+  outline: none;
+  flex: 1;
+  border-radius: 30px;
+  height: 50px;
+  
+  background-color: #050303;
+
 
 }
 .srchbutton{
   height: 40px;
   width: 40px;
-  margin: auto;
 
 }
 /* feedback page css */
@@ -319,6 +345,10 @@ body.dark-mode .heading {
 .contact-info {
   font-size: 18px;
   color: #111;
+}
+body-dark-mode .contact-info {
+  font-size: 18px;
+  color: #ffffff;
 }
 
 .contact-info ul {
