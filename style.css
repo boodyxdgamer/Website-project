@@ -10,29 +10,17 @@
   left: 0;
   width: 100%;
   margin-top: 30px; 
-  height: 170px;
+  height: 170px;  
 }
 .main-header h1 {
-  display: inline-block;
   font-weight: bolder;
   font-family: roboto;
-  margin-left: 100px;
   margin-top: 10px; 
+  margin-bottom: 10px;
+  margin-left: 130px;
+ 
 }
-.main-header.dark-mode {
-  background-color:#005bea; 
-  color: white;
-  text-align: center;
-  font-family: Roboto ;
-  font-weight: bold;
-  position: fixed;
-  
-  top: 0;
-  left: 0;
-  width: 100%;
-  margin-top: 30px; 
-  height: 25%;
-}
+
 .logo{
   position: absolute;
   left: 20px; /* Adjust distance from left */
@@ -202,7 +190,7 @@ body.dark-mode { background-image: url('Images/blackbg.gif'); /* Replace with yo
   
   .themebutton {
     display: inline-block;
-    float: right;
+    float: right; 
     background-color: #ffd700;
     color: rgb(0, 0, 0);
     padding: 8px;
@@ -219,19 +207,21 @@ body.dark-mode { background-image: url('Images/blackbg.gif'); /* Replace with yo
     
   }
 body.dark-mode .themebutton {
-  background-color: #ffffff;
-  color: black;
-  padding: 8px;
-  border: none;
-  border-radius: 20px;
-  font-size: 15px;
-  width: 8%;
-  cursor: pointer;
-  transition: background-color 0.3s;
-  display: block;
-  margin-left: auto;
-  margin-right: 0;
-  margin-top: 5px;
+  display: inline-block;
+    float: right;
+    background-color: #ffd700;
+    color: rgb(0, 0, 0);
+    padding: 8px;
+    border: none;
+    border-radius: 20px;
+    font-size: 15px;
+    width: 150px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: block;
+    margin-left: auto;
+    margin-right: 0;
+    margin-top: 5px;
 }
 .heading{
   font-family: Roboto ,sans-serif;
@@ -240,15 +230,18 @@ body.dark-mode .themebutton {
   margin-top: 35px;
   
 }
-body.dark-mode .title{
+body.dark-mode .heading {
   
-  text-indent: 9%; 
   font-family: Roboto ;  
   color: #ffffff;
 }
 .nav div h2{
-  float: left;
+    float: left; 
+    margin-top: 5px;
+   
+    
 }
+
 
 
 
@@ -271,8 +264,46 @@ body.dark-mode .title{
 .nav{
   display: inline-block;
   text-align: center;
-}
+  margin : 0 auto;
+  
+  
 
+}
+/* Search bar css */
+.srchcard{
+  margin: 0px auto;
+  background: linear-gradient(to right ,#72c2d6 ,#4ac797);
+  align-content: center;
+  justify-content: center;
+  border-radius: 15px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+  display: flex;
+  width: 70%;
+}
+.srchform{
+  display:flex;
+
+  width: 100%;
+}
+.srch{
+  font-size: 14px;
+  font-family:'Arial' ,sans-serif ;
+  padding: 8px ;
+  display: flex;
+  border: 1px solid #ccc;
+  outline: none;
+  flex: 1;
+  border-radius: 30px;
+  height: 50px;
+
+
+}
+.srchbutton{
+  height: 40px;
+  width: 40px;
+  margin: auto;
+
+}
 /* feedback page css */
 
 /* Contact */
@@ -340,3 +371,5 @@ body.dark-mode .title{
 #contact-form input[type="submit"]:hover {
   background-color: #333;
 }
+
+
