@@ -390,6 +390,7 @@ body-dark-mode .contact-info {
 
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 
 .index {
   font-family: sans-serif;
@@ -663,6 +664,8 @@ cursor: pointer;
 
 }
 =======
+=======
+>>>>>>> Stashed changes
 .footer {
   background-color: #b1c8f7; /* Sets the background color of the footer */
   color: white; /* Sets the text color of the footer */
@@ -693,5 +696,9 @@ font-weight: bold;
 left: 0; /* Aligns the footer to the left */ 
 width: 100%;
 
+<<<<<<< Updated upstream
+}
+>>>>>>> Stashed changes
+=======
 }
 >>>>>>> Stashed changes
