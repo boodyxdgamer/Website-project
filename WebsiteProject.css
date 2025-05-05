@@ -6,7 +6,7 @@
 }
 .srchcard{
     margin: 40px auto;
-    background: linear-gradient(to right ,#72c2d6 ,#4ac797);
+    background: linear-gradient(to right ,#72c2d6 ,#4ac797, rgb(10, 97, 68) );
     align-content: center;
     justify-content: center;
     padding: 40px 25px;
@@ -22,7 +22,6 @@
 }
 .srch{
     font-size: 14px;
-    font-family:'Arial' ,sans-serif ;
     padding: 8px ;
     display: flex;
     border: 1px solid #ccc;
@@ -30,7 +29,8 @@
     flex: 1;
     border-radius: 30px;
     height: 50px;
-
+    font-size: medium;
+    font-family: Roboto;
 
 }
 .srchbutton{
@@ -38,4 +38,32 @@
     width: 40px;
     margin: auto;
 
+
+}
+#srchlist {
+    position: absolute;
+    left: 50px;
+    top: 19%;
+    width: 500px;
+    background-color: #ccc;
+    border: 5px solid rgb(10, 97, 68) ;;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 0;
+    list-style: none;
+    
+
+}
+#srchlist li{
+
+    padding: 10px;
+    cursor: pointer;
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: large;
+
+}
+#srchlist li:hover{
+
+    background-color: rgb(10, 97, 68);
 }
