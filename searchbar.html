@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <link rel="stylesheet" href="WebsiteProject.css">
+    <link rel="stylesheet" href="searchbar.css">
 </head>
 
 <body>
@@ -13,7 +13,7 @@
 <div class="srchdiv"> 
     <div class="srchcard">
         <form class="srchform">
-            <input type="searchs" name="query" class="srch" placeholder="search a product..." id="srch" oninput="search()">
+            <input type="text" name="query" class="srch" placeholder= "Search a product... " id="srch" autocomplete="off" oninput="search()">
             <input type="image" src="Images/icons8-search-50.png" alt="search" class="srchbutton" name="SearchButton">
                 <ul id="srchlist" style="display: none;">
                     <li onclick="redirectToPage('accessories1.html')">playstation 5 controller</li>
@@ -39,16 +39,16 @@
         }
     });
     function search(){
-        let input = document.getElementById("srch").toLowerCase();
+        let input = document.getElementById("srch").value.toLowerCase();
         let items = document.getElementById("srchlist").getElementsByTagName("li");
 
         
-        for(let i=0; i< items.lenth; i++){
+        for(let i=0; i< items.length; i++){
             let text= items[i].innerText.toLowerCase();
             if(text.includes(input)){
-                items.style.display="block";
+                items[i].style.display="block";
             }else{
-                items.style.display="none";
+                items[i].style.display="none";
             }
         }
     }
