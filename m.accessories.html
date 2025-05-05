@@ -21,24 +21,37 @@
        
         <h1  >INVINCIBLE</h1> 
        
+        <div class="srchdiv"> 
             <div class="srchcard">
-             <form class="srchform">
-                 <input type="search" name="SearchBar" class="srch" placeholder="search a product...">
-                 <input type="image" src="Images/icons8-search-50.png" alt="search" class="srchbutton" name="SearchButton"> 
-             </form>
+                <form class="srchform">
+                    <input type="text" name="query" class="srch" placeholder= "Search a product... " id="srch" autocomplete="off" oninput="search()">
+                    <input type="image" src="Images/icons8-search-50.png" alt="search" class="srchbutton" name="SearchButton">
+                        <ul id="srchlist" style="display: none;">
+                            <li onclick="redirectToPage('accessories1.html')">playstation 5 controller</li>
+                            <li onclick="redirectToPage('accessories2.html')">Controller Charging Station</li>
+                            <li onclick="redirectToPage('accessories3.html')">PlayStation VR2</li>
+                            <li onclick="redirectToPage('console.html')">PlayStation 5 slim</li>
+                            <li onclick="redirectToPage('console2.html')">PlayStation 5 pro</li>
+                            <li onclick="redirectToPage('console3.html')">xbox</li>
+                            <li onclick="redirectToPage('game1.html')">FC 25</li>
+                            <li onclick="redirectToPage('game2.html')">ROCKET LEAGUE</li>
+                            <li onclick="redirectToPage('game3.html')">RED DEAD REDEMPTION 2</li>
+                        </ul>
+                </form>
             </div>
+        </div>
              
          
        
              <br>
-         <script src="WebsiteProject.js"></script>
+         <script src="backend.js"></script>
         <nav class="nav">
             
             <div>
                 <h2 class="f1"><a href="home.html" title="takes you to the Home page">Home</a></h2>
                 <h2 class="f2"><a href="aboutus.html" title="Who we are">About us</a></h2>
                 <h2 class="f3"><a href="feedback.html" title="Having trouble? contact us">Contact us</a></h2>
-                <h2 class="f4"><a href="test.html" title="Browse through our products page">Products</a></h2>
+                <h2 class="f4"><a href="home.html" title="Browse through our products page">Products</a></h2>
     
             </div>
          </nav>
@@ -97,12 +110,6 @@
             
             </div>
         </footer>
-        <script>
-        const toggleBtn = document.getElementById('theme');
-    
-        toggleBtn.addEventListener('click', () => {
-            document.body.classList.toggle('dark-mode');
-            });
-        </script>
+      
 </body>
 </html>

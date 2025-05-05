@@ -17,7 +17,7 @@
   font-family: roboto;
   margin-top: 10px; 
   margin-bottom: 10px;
-  margin-left: 130px;
+  margin-left: 210px;
  
 }
 /* ANNOUNCEMENT BAR */
@@ -128,13 +128,33 @@ margin : 0 auto;
   font-family: Roboto;
   background-color:rgb(248, 248, 248) ;
 }
+body.dark-mode .srch{
+  font-size: 14px;
+  padding: 30px ;
+  display: block;
+  border: none ;
+  outline: none;
+  flex: 1;
+  border-radius: 30px;
+  height: 60px;
+  font-size: x-large;
+  font-family: Roboto;
+  background-color:rgb(7, 5, 5) ;
+}
 .srchbutton{
   height: 60px;
   width: 60px;
   margin: auto;
+  background-color: transparent;
+
+
+}
+body.dark-mode .srchbutton{
+  height: 60px;
+  width: 60px;
+  margin: auto;
+  background-color: transparent;
   
-
-
 }
 #srchlist {
   position: absolute;
@@ -240,7 +260,8 @@ body {
 
 
 /* Dark mode styles */
-body.dark-mode { background-image: url('Images/blackbg.gif'); /* Replace with your image path */
+body.dark-mode { 
+  background-image: url('Images/blackbg.gif'); /* Replace with your image path */
   background-size: cover;
   background-repeat: space;
   background-attachment: fixed;
@@ -278,7 +299,7 @@ body.dark-mode .catigory {
   padding: auto; /* Adds padding inside the category box */
   color: white;
   margin: 50px; /* Adds space between each category box */   
-  background-color: rgba(0, 0, 0, 0);  
+  background-color: transparent;  
 }
   
   
@@ -319,26 +340,38 @@ body.dark-mode .heading {
 /* feedback page css */
 
 /* Contact */
-#contact {
+.contact {
   padding-left: 350px; 
   padding-top: 150px;
   font-family : Roboto, sans-serif;
   font-weight: bold;  
   font-size : 26px;
 }
-
+.feedbackh2{
+  color: #000000;
+  display: block;
+}
+body.dark-mode .feedbackh2{
+  color: #ffffff;
+  left: 0;
+  
+}
 /* Contact Information */
 .contact-info {
   font-size: 18px;
   color: #111;
-}
-body-dark-mode .contact-info {
-  font-size: 18px;
-  color: #ffffff;
+  display: fixed;
+  
+  padding: 20px;
+  width: fit-content;
 }
 
 .contact-info ul {
   padding-left: 30px;
+}
+body.dark-mode .contact-info ul {
+  padding-left: 30px;
+  color: #e6e6e6;
 }
 
 .contact-info li {
@@ -373,6 +406,19 @@ body-dark-mode .contact-info {
 #contact-form input[type="submit"] {
   background-color : #000000;
   color: #ffffff;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top:10px;
+  font: roboto, sans-serif;
+  border: none;
+  cursor: pointer;
+  margin-left:60%;
+}
+body.dark-mode #contact-form input[type="submit"] {
+  background-color : #ffffff;
+  color: #000000;
   padding-left: 40px;
   padding-right: 40px;
   padding-top: 10px;
@@ -484,7 +530,7 @@ textarea {
   font-family: Roboto;
   font-weight: bold;
   width: 100%;
-  
+  bottom: 0;
 }
 
 
@@ -510,7 +556,7 @@ body.dark-mode textarea {
 body.dark-mode button:hover {
   background-color: #666;
 }
-body.dark-mode h2 {
+body.dark-mode  .homeh2 {
   text-align: center;
   margin-bottom: 30px;
   color: #ffffff;

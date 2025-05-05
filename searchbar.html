@@ -29,35 +29,7 @@
         </form>
     </div>
 </div>
-<script>
-    document.getElementById("srch").addEventListener("focus",function(){
-        document.getElementById("srchlist").style.display="block";
-    });
-    document.addEventListener("click",function(event){
-        if(!event.target.closest(".srchform")){
-            document.getElementById("srchlist").style.display="none";
-        }
-    });
-    function search(){
-        let input = document.getElementById("srch").value.toLowerCase();
-        let items = document.getElementById("srchlist").getElementsByTagName("li");
-
-        
-        for(let i=0; i< items.length; i++){
-            let text= items[i].innerText.toLowerCase();
-            if(text.includes(input)){
-                items[i].style.display="block";
-            }else{
-                items[i].style.display="none";
-            }
-        }
-    }
-    function redirectToPage(page){
-        window.location.href =page;
-
-    }
-    
-</script>
+<script src="backend.js"></script>
 
 </body>
 </html>
