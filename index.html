@@ -1,14 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<<head>
     <meta charset="UTF-8">
-    <title>Delivery order</title>
-    <link rel="stylesheet" href="index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel ="icon" type="image/png" href="images/favicon.png" >
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <title>Invincible Store</title>
+
 </head>
-<body>
-    <button id="theme">Switch Theme</button>
+<body >
+    <div class="announcement-bar" ><div  class="scrolling-text">
+        🚨Limited Time Offer: 15% Off All Controllers! Use Code: <strong>INVINCIBLE15</strong> 
+</div> 
+</div> 
+</div>
+<header class="main-header">
+    <button id="theme" class = "themebutton" >Switch Theme</button>
+    <img src="images/favicon.png" alt="Logo" class="logo">
+   
+    <h1  >INVINCIBLE</h1> 
+   
+        <div class="srchcard">
+         <form class="srchform">
+             <input type="search" name="SearchBar" class="srch" placeholder="search a product...">
+             <input type="image" src="Images/icons8-search-50.png" alt="search" class="srchbutton" name="SearchButton"> 
+         </form>
+        </div>
+         
+     
+   
+         <br>
+     <script src="WebsiteProject.js"></script>
+    <nav class="nav">
+        
+        <div>
+            <h2 class="f1"><a href="home.html" title="takes you to the Home page">Home</a></h2>
+            <h2 class="f2"><a href="aboutus.html" title="Who we are">About us</a></h2>
+            <h2 class="f3"><a href="feedback.html" title="Having trouble? contact us">Contact us</a></h2>
+            <h2 class="f4"><a href="test.html" title="Browse through our products page">Products</a></h2>
+
+        </div>
+     </nav>
+    
+</header>
+
+    <br>
     <div class="container">
-    <h2>Delivery information</h2>
+    <h2 class="h2index">Delivery information</h2>
         <hr>
     <form>
             <div class="Products">
@@ -33,41 +72,41 @@
             </div>
         <hr>
     <label for="fullName" class="NameOf">Full name</label>
-    <input type="text" id="fullName" name="fullName" required placeholder="Smith" title="Enter Your Full Name">
+    <input type="text" id="fullName" name="fullName" required placeholder="Smith" title="Enter Your Full Name" class="input">
         <hr>
     <label for="address" class="NameOf">address</label>
-    <textarea id="address" name="address" rows="3" required placeholder="Egypt Cairo 25 Street" title="Enter Your address"></textarea>
+    <textarea id="address" name="address" rows="3" required placeholder="Egypt Cairo 25 Street" title="Enter Your address" class="input"></textarea>
         <hr>
     <label for="email" class="NameOf">E-mail</label>
-    <input type="email" id="email" name="email" required placeholder="abcdefghi@gmail.com"title="Enter Correct Email">
+    <input type="email" id="email" name="email" required placeholder="abcdefghi@gmail.com"title="Enter Correct Email" class="input">
         <hr>
     <label for="phone" class="NameOf">Mobile number</label>
-    <input type="tel" id="phone" name="phone" required  placeholder="01234567890" minlength="11" maxlength="11"title="Enter Correct Mobile Number">
+    <input type="tel" id="phone" name="phone" required  placeholder="01234567890" minlength="11" maxlength="11"title="Enter Correct Mobile Number" class="input">
         <hr>
         <label for="code" class="NameOf">Discount code</label>
-        <input type="text" id="code" name="code"  placeholder="FCAI-H (optional)" title="Enter discount code">
+        <input type="text" id="code" name="code"  placeholder="FCAI-H (optional)" title="Enter discount code" class="input">
         <hr>
         <h2>Choose Payment Method</h2>
         <hr>
         <div class="payment-option">
             <label for="cash" class="cash">Cash</label>
-            <input type="radio" name="payment" id="cash">
+            <input type="radio" name="payment" id="cash" class="input">
         </div>
         
         <div class="payment-option">
             <label for="visa" class="visa">Visa</label>
-            <input type="radio" name="payment" id="visa">
+            <input type="radio" name="payment" id="visa" class="input">
             
             
             <div class="visa-show">
                 <label for="Payment">Visa Card</label>
-                <input type="text" id="Payment" required placeholder="0000 0000 0000 0000" minlength="16" maxlength="16" title="Enter Correct Visa Card Number">
+                <input type="text" id="Payment" required placeholder="0000 0000 0000 0000" minlength="16" maxlength="16" title="Enter Correct Visa Card Number" class="input">
                 <hr>
                 <label for="Valid_EXP">Card Valid EXP</label>
-                <input type="datetime" id="Valid_EXP" required placeholder="MM/YY" maxlength="5" title="Enter a Valid EXP">
+                <input type="datetime" id="Valid_EXP" required placeholder="MM/YY" maxlength="5" title="Enter a Valid EXP" class="input">
                 <hr>
                 <label for="cvv">CVV</label>
-                <input type="tel" id="cvv" required placeholder="123" minlength="3" maxlength="3" title="Enter Your Correct CVV">
+                <input type="tel" id="cvv" required placeholder="123" minlength="3" maxlength="3" title="Enter Your Correct CVV" class="input">
             </div>
         </div>
         
