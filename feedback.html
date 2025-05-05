@@ -48,7 +48,7 @@
      
    
          <br>
-     <script src="WebsiteProject.js"></script>
+     <script src="backend.js"></script>
     <nav class="nav">
         
         <div>
@@ -106,8 +106,28 @@
         </div>
     </footer>
  
-    <script src="backend.js"></script>
- 
+    <script>
+        const form = document.querySelector("#contact-form form");
+      
+        form.addEventListener("submit", function (event) {
+            event.preventDefault(); 
+      
+            const name = document.getElementById("name").value.trim();
+            const email = document.getElementById("email").value.trim();
+            const phone = document.getElementById("phone_number").value.trim();
+            const subject = document.getElementById("subject").value.trim();
+            const message = document.getElementById("message").value.trim();
+      
+            
+            if (!name || !email || !phone || !subject || !message) {
+                alert("Please fill in all the fields.");
+                return;
+            }
+      
+            alert("Thank you! Your message has been submitted.");
+            form.reset();
+        });
+      </script>
 </body>
 </html>
 
