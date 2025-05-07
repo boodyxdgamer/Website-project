@@ -1,10 +1,10 @@
-
 .d1{
     width: auto;
     overflow: auto;
     display: flex;
     float: left; 
-    margin-right: 50px;
+    margin-left: 50px;
+    margin-right: 100px;
 }
 .d2{
 float: center;
@@ -191,7 +191,8 @@ body.dark-mode .d1{
   overflow: auto;
   display: flex;
   float: left; 
-  margin-right: 50px;
+  margin-left: 50px;
+  margin-right: 100px;
 }
 body.dark-mode #num{
   background-color: black;
@@ -202,3 +203,4 @@ body.dark-mode #theme:hover {
   background-color: #484742;
   color: #f5f5f5;
 }
+
