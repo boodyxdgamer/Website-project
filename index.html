@@ -11,7 +11,7 @@
     <div class="container">
         <h2>Delivery information</h2>
         <hr>
-        <form onsubmit="alert('Your order has been placed successfully!'); return false;">
+        <form onsubmit="alert('Your order has been placed successfully!'); return false; ">
             <div class="Products">
                 <label for="device" class="NameOf">Type of product</label>
                 <select name="device" id="devices">
@@ -51,9 +51,9 @@
                 <label for="cash">Cash</label>
                 <input type="radio" name="payment" id="cash" onchange="toggleVisaFields(false)">
             </div>
-            <div class="payment-option">
+            <div class="payment-option" >
                 <label for="visa">Visa</label>
-                <input type="radio" name="payment" id="visa" onchange="toggleVisaFields(true)">
+                <input type="radio" name="payment" id="visa" required onchange="toggleVisaFields(true)">
                 <div class="visa-show">
                     <label for="Payment">Visa Card</label>
                     <input type="text" id="Payment" placeholder="0000 0000 0000 0000" minlength="16" maxlength="16">
