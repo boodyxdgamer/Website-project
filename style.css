@@ -682,21 +682,134 @@ body.dark-mode .visa {
   color: blue;
   margin: 15px;
 }
-.d1{
+/*baraa*/
+.d11c{
+  width: 700px;
+  overflow: auto;
+  display: flex;
+  float: left; 
+  margin-left: 50px;
+  margin-top: 20px;
+}
+.d21c{
+float: center;
+height: 400px;
+margin-top: 150px;
+margin-left: 700px;
+padding-left: 20px;
+width:700px;
+}
+.d12c{
   width: 700px;
   overflow: auto;
   display: flex;
   float: left; 
 }
-.d2{
+.d22c{
+  float: center;
+  height: 400px;
+  margin-top: 150px;
+  margin-left: 700px;
+  padding-left: 20px;
+  width:700px;
+}
+.d13c{
+  width: 700px;
+  overflow: auto;
+  display: flex;
+  float: left; 
+}
+.d23c{
+  float: center;
+  height: 400px;
+  margin-top: 150px;
+  margin-left: 700px;
+  padding-left: 20px;
+  width:700px;
+}
+.d11g{
+  width: 700px;
+  overflow: auto;
+  display: flex;
+  float: left; 
+}
+.d21g{
+  float: center;
+  height: 400px;
+  margin-top: 150px;
+  margin-left: 700px;
+  padding-left: 20px;
+  width:700px;
+}
+.d12g{
+  width: 700px;
+  overflow: auto;
+  display: flex;
+  float: left; 
+}
+.d22g{
+  float: center;
+  height: 400px;
+  margin-top: 150px;
+  margin-left: 700px;
+  padding-left: 20px;
+  width:700px;
+}
+.d13g{
+  width: 700px;
+  overflow: auto;
+  display: flex;
+  float: left; 
+}
+.d23g{
+  float: center;
+  height: 400px;
+  margin-top: 150px;
+  margin-left: 700px;
+  padding-left: 20px;
+  width:700px;
+}
+.d11a{
+  width: 700px;
+  overflow: auto;
+  display: flex;
+  float: left; 
+}
+.d21a{
+  float: center;
+  height: 400px;
+  margin-top: 150px;
+  margin-left: 700px;
+  padding-left: 20px;
+  width:700px;
+}
+.d12a{
+  width: 700px;
+  overflow: auto;
+  display: flex;
+  float: left; 
+}
+.d22a{
+  float: center;
+  height: 400px;
+  margin-top: 150px;
+  margin-left: 700px;
+  padding-left: 20px;
+  width:700px;
+}
+.d13a{
+  width: 700px;
+  overflow: auto;
+  display: flex;
+  float: left; 
+}
+.d23a{
 float: center;
-background-color:rgba(255, 255, 255, 0);
 height: 400px;
 margin-top: 150px;
-margin-left: 750px;
+margin-left: 700px;
 padding-left: 20px;
-padding-top: 0px;
-border-radius: 10px;
+width:700px;
 }
 .deld{
 color: rgba(16, 2, 2, 0.563);
@@ -714,6 +827,7 @@ text-align: center;
 cursor: pointer;
 
 }
+
 .footer {
   background-color: #b1c8f7; /* Sets the background color of the footer */
   color: white; /* Sets the text color of the footer */
@@ -774,6 +888,7 @@ left: 0; /* Aligns the footer to the left */
 width: 100%;
 
 }
+
 /* Login css */
 .login{
   display: inline-block;
