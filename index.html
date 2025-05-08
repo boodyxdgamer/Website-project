@@ -9,89 +9,81 @@
     <button id="theme">Switch Theme</button>
     <a href="registeration.html"><button id="theme" style="margin-top: 3px;">Login</button></a>
     <div class="container">
-    <h2>Delivery information</h2>
+        <h2>Delivery information</h2>
         <hr>
-    <form onsubmit="alert('Your order has been placed successfully!'); return false;">
+        <form onsubmit="alert('Your order has been placed successfully!'); return false;">
             <div class="Products">
-        <label for="device" class="NameOf">Type of product</label>
-        <select name="device" id="devices">
-        <optgroup label="Console">
-        <option>PlayStation 5 slim</option>
-        <option>PlayStation 5 pro</option>
-        <option>2020 New Xbox</option>
-        </optgroup>
-        <optgroup label="Accessories">
-        <option>PS5 Controller</option>
-        <option>Controller Charger</option>
-        <option>PlayStation VR2</option>
-        </optgroup>
-        <optgroup label="Games">
-        <option>FC 25</option>
-        <option>Rocket League</option>
-        <option>Red Dead Redemption 2</option>
-        </optgroup>
-        </select>
+                <label for="device" class="NameOf">Type of product</label>
+                <select name="device" id="devices">
+                    <optgroup label="Console">
+                        <option>PlayStation 5 slim</option>
+                        <option>PlayStation 5 pro</option>
+                        <option>2020 New Xbox</option>
+                    </optgroup>
+                    <optgroup label="Accessories">
+                        <option>PS5 Controller</option>
+                        <option>Controller Charger</option>
+                        <option>PlayStation VR2</option>
+                    </optgroup>
+                    <optgroup label="Games">
+                        <option>FC 25</option>
+                        <option>Rocket League</option>
+                        <option>Red Dead Redemption 2</option>
+                    </optgroup>
+                </select>
             </div>
-        <hr>
-    <label for="fullName" class="NameOf">Full name</label>
-    <input type="text" id="fullName" name="fullName" required placeholder="Smith" title="Enter Your Full Name">
-        <hr>
-    <label for="address" class="NameOf">address</label>
-    <textarea id="address" name="address" rows="3" required placeholder="Egypt Cairo 25 Street" title="Enter Your address"></textarea>
-        <hr>
-    <label for="email" class="NameOf">E-mail</label>
-    <input type="email" id="email" name="email" required placeholder="abcdefghi@gmail.com"title="Enter Correct Email">
-        <hr>
-    <label for="phone" class="NameOf">Mobile number</label>
-    <input type="tel" id="phone" name="phone" required  placeholder="01234567890" minlength="11" maxlength="11"title="Enter Correct Mobile Number">
-        <hr>
-        <label for="code" class="NameOf">Discount code</label>
-        <input type="text" id="code" name="code"  placeholder="FCAI-H (optional)" title="Enter discount code">
-        <hr>
-        <h2>Choose Payment Method</h2>
-        <hr>
-        <div class="payment-option">
-            <label for="cash" class="cash">Cash</label>
-            <input type="radio" name="payment" id="cash">
-        </div>
-        
-        <div class="payment-option">
-            <label for="visa" class="visa">Visa</label>
-            <input type="radio" name="payment" id="visa">
-            
-            
-            <div class="visa-show">
-                <label for="Payment">Visa Card</label>
-                <input type="text" id="Payment" required placeholder="0000 0000 0000 0000" minlength="16" maxlength="16" title="Enter Correct Visa Card Number">
-                <hr>
-                <label for="Valid_EXP">Card Valid EXP</label>
-                <input type="datetime" id="Valid_EXP" required placeholder="MM/YY" maxlength="5" title="Enter a Valid EXP">
-                <hr>
-                <label for="cvv">CVV</label>
-                <input type="tel" id="cvv" required placeholder="123" minlength="3" maxlength="3" title="Enter Your Correct CVV">
+            <hr>
+            <label for="fullName" class="NameOf">Full name</label>
+            <input type="text" id="fullName" name="fullName" required placeholder="Smith" title="Enter Your Full Name">
+            <hr>
+            <label for="address" class="NameOf">Address</label>
+            <textarea id="address" name="address" rows="3" required placeholder="Egypt Cairo 25 Street" title="Enter Your Address"></textarea>
+            <hr>
+            <label for="email" class="NameOf">E-mail</label>
+            <input type="email" id="email" name="email" required placeholder="abcdefghi@gmail.com" title="Enter Correct Email">
+            <hr>
+            <label for="phone" class="NameOf">Mobile number</label>
+            <input type="tel" id="phone" name="phone" required placeholder="01234567890" minlength="11" maxlength="11" title="Enter Correct Mobile Number">
+            <hr>
+            <h2>Choose Payment Method</h2>
+            <hr>
+            <div class="payment-option">
+                <label for="cash">Cash</label>
+                <input type="radio" name="payment" id="cash" onchange="toggleVisaFields(false)">
             </div>
-        </div>
-        
-
-    <button id="submit" type="submit">Submit</button>
-    <button id="reset" type="reset">Reset</button>
-    </form>
+            <div class="payment-option">
+                <label for="visa">Visa</label>
+                <input type="radio" name="payment" id="visa" onchange="toggleVisaFields(true)">
+                <div class="visa-show">
+                    <label for="Payment">Visa Card</label>
+                    <input type="text" id="Payment" placeholder="0000 0000 0000 0000" minlength="16" maxlength="16">
+                    <hr>
+                    <label for="Valid_EXP">Card Valid EXP</label>
+                    <input type="text" id="Valid_EXP" placeholder="MM/YY" maxlength="5">
+                    <hr>
+                    <label for="cvv">CVV</label>
+                    <input type="tel" id="cvv" placeholder="123" minlength="3" maxlength="3">
+                </div>
+            </div>
+            <button id="submit" type="submit">Submit</button>
+            <button id="reset" type="reset">Reset</button>
+        </form>
     </div>
-    <footer class="footer"> 
-        <p class="footer-text">© 2025 E-Shop. All rights reserved.</p>
-        <div class="social-links">
-            <a href="#" class="social-link">Facebook</a>
-            <a href="#" class="social-link">Instagram</a>
-            <a href="feedback.html" class="social-link">contact us</a>
-        
-        </div>
-    </footer>
-
+<!--js for making visa feilds required only if Visa is chosen as a payment method-->
+    <script>
+        function toggleVisaFields(enable) {
+            const visaFields = document.querySelectorAll(".visa-show input");
+            visaFields.forEach(field => {
+                field.disabled = !enable;
+                field.required = enable;
+            });
+        }
+    </script>
+    <!--js for changing the theme-->
     <script>
         const toggleBtn = document.getElementById('theme');
         toggleBtn.addEventListener('click', () => {
         document.body.classList.toggle('dark-mode');});
     </script>
-    
 </body>
 </html>
