@@ -182,9 +182,7 @@ body.dark-mode .srchbutton{
 
 }
 #srchlist li:hover{
-
-
-  background-color: rgb(10, 97, 68) ;
+  background-color: rgb(35, 31, 255) ;
   border-radius: 10px;
 
 }
