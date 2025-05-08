@@ -723,12 +723,12 @@ width:700px;
 
 }
 .d12g{
-  width: 640px;
+  width: 588px;
   overflow: auto;
   display: flex;
   float: left; 
-  margin-top: -50px;
-  margin-left: 30px;
+  margin-top: 55px;
+  margin-left: 105px;
 }
 .d13g{
   width: 650px;
