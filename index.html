@@ -9,28 +9,40 @@
     <button id="theme">Switch Theme</button>
     <a href="registeration.html"><button id="theme" style="margin-top: 3px;">Login</button></a>
     <div class="container">
-        <h2>Delivery information</h2>
+        
+        <!--added by abdelrahman to display the quantity from the product view page -->
+        <h2>Checkout Summary</h2>
+        
+        <p>Quantity Selected: <span id="displayQuantity"></span></p>
+        
+        <script>
+            // Get parameters from URL
+            const params = new URLSearchParams(window.location.search);
+            
+            // Extract values
+            const quantity = params.get("quantity");
+            
+            // Display it
+            document.getElementById("displayQuantity").textContent = quantity || "Not specified";
+        </script>
+        <!--end of added by abdelrahman-->
         <hr>
         <form onsubmit="alert('Your order has been placed successfully!'); return false; ">
             <div class="Products">
-                <label for="device" class="NameOf">Type of product</label>
-                <select name="device" id="devices">
-                    <optgroup label="Console">
-                        <option>PlayStation 5 slim</option>
-                        <option>PlayStation 5 pro</option>
-                        <option>2020 New Xbox</option>
-                    </optgroup>
-                    <optgroup label="Accessories">
-                        <option>PS5 Controller</option>
-                        <option>Controller Charger</option>
-                        <option>PlayStation VR2</option>
-                    </optgroup>
-                    <optgroup label="Games">
-                        <option>FC 25</option>
-                        <option>Rocket League</option>
-                        <option>Red Dead Redemption 2</option>
-                    </optgroup>
-                </select>
+                <!--added by Abdelrahman to display product name-->
+                <h2>Checkout Summary</h2>
+        
+                <label>Product Name: <span id="displayProduct"></span></label>
+        
+                <script>
+                    // Extract values (use existing params object to avoid duplication)
+                    const product = params.get("product");
+        
+                    // Display values in checkout page
+                    document.getElementById("displayProduct").textContent = product || "Not specified";
+                </script>
+                <!--end of added by Abdelrahman-->
+        
             </div>
             <hr>
             <label for="fullName" class="NameOf">Full name</label>
