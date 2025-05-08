@@ -77,24 +77,24 @@
         </div>
       </div>
       <div id ="contact-form">
-        <form>
+        <form onsubmit="alert('Thank you! Your message has been submitted.');">
 
             <label for="name"></label><br>
-            <input type="text" id="name" name="name" placeholder="Name"><br>
+            <input type="text" id="name" name="name" placeholder="Name" required><br>
 
             <label for="email"></label><br>
-            <input type="email" id="email" name="email" placeholder="Email"><br>
+            <input type="email" id="email" name="email" placeholder="Email" required><br>
 
             <label for="phone_number"></label><br>
-            <input type="tel" id="phone_number" name="phone_number" placeholder="Phone Number"><br>
+            <input type="tel" id="phone_number" name="phone_number" placeholder="Phone Number" required><br>
         
             <label for="subject"></label><br>
-            <input type="text" id="subject" name="subject" placeholder="Contact subject"><br>
+            <input type="text" id="subject" name="subject" placeholder="Contact subject"required><br>
 
             <label for="message"></label><br>
-            <textarea id="message" name="message" placeholder="Message"></textarea><br>
+            <textarea id="message" name="message" placeholder="Message"required></textarea><br>
 
-            <input type="submit" value="Send">  
+            <input type="submit" value="Send" >  
         
           </form>
         </div>
@@ -109,28 +109,7 @@
         </div>
     </footer>
  
-    <script>
-        const form = document.querySelector("#contact-form form");
-      
-        form.addEventListener("submit", function (event) {
-            event.preventDefault(); 
-      
-            const name = document.getElementById("name").value.trim();
-            const email = document.getElementById("email").value.trim();
-            const phone = document.getElementById("phone_number").value.trim();
-            const subject = document.getElementById("subject").value.trim();
-            const message = document.getElementById("message").value.trim();
-      
-            
-            if (!name || !email || !phone || !subject || !message) {
-                alert("Please fill in all the fields.");
-                return;
-            }
-      
-            alert("Thank you! Your message has been submitted.");
-            form.reset();
-        });
-      </script>
+
 </body>
 </html>
 
