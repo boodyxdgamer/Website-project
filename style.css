@@ -691,83 +691,53 @@ body.dark-mode .visa {
   margin-left: 50px;
   margin-top: 20px;
 }
-.d21c{
+.d2{
 float: center;
 height: 400px;
 margin-top: 150px;
-margin-left: 700px;
-padding-left: 20px;
+margin-left: 600px;
 width:700px;
 }
 .d12c{
-  width: 700px;
+  width: 650px;
   overflow: auto;
   display: flex;
   float: left; 
-}
-.d22c{
-  float: center;
-  height: 400px;
-  margin-top: 150px;
-  margin-left: 700px;
-  padding-left: 20px;
-  width:700px;
+  margin-left: 50px;
+  margin-top: 20px;
 }
 .d13c{
-  width: 700px;
+  width: 560px;
   overflow: auto;
   display: flex;
   float: left; 
-}
-.d23c{
-  float: center;
-  height: 400px;
-  margin-top: 150px;
-  margin-left: 700px;
-  padding-left: 20px;
-  width:700px;
+  margin-left: 130px;
+  margin-top: 70px;
 }
 .d11g{
-  width: 700px;
+  width: 660px;
   overflow: auto;
   display: flex;
   float: left; 
-}
-.d21g{
-  float: center;
-  height: 400px;
-  margin-top: 150px;
-  margin-left: 700px;
-  padding-left: 20px;
-  width:700px;
+  margin-left: 50px;
+  margin-top: 20px;
+
 }
 .d12g{
-  width: 700px;
+  width: 640px;
   overflow: auto;
   display: flex;
   float: left; 
-}
-.d22g{
-  float: center;
-  height: 400px;
-  margin-top: 150px;
-  margin-left: 700px;
-  padding-left: 20px;
-  width:700px;
+  margin-top: -50px;
+  margin-left: 30px;
 }
 .d13g{
-  width: 700px;
+  width: 650px;
   overflow: auto;
   display: flex;
   float: left; 
-}
-.d23g{
-  float: center;
-  height: 400px;
-  margin-top: 150px;
-  margin-left: 700px;
-  padding-left: 20px;
-  width:700px;
+  margin-top:-20px ;
+  margin-left: 50px;
 }
 .d11a{
   width: 700px;
@@ -775,41 +745,20 @@ width:700px;
   display: flex;
   float: left; 
 }
-.d21a{
-  float: center;
-  height: 400px;
-  margin-top: 150px;
-  margin-left: 700px;
-  padding-left: 20px;
-  width:700px;
-}
 .d12a{
-  width: 700px;
+  width: 640px;
   overflow: auto;
   display: flex;
   float: left; 
-}
-.d22a{
-  float: center;
-  height: 400px;
-  margin-top: 150px;
-  margin-left: 700px;
-  padding-left: 20px;
-  width:700px;
+  margin-top:55px ;
+  margin-left: 85px;
 }
 .d13a{
-  width: 700px;
+  width: 650px;
   overflow: auto;
   display: flex;
   float: left; 
-}
-.d23a{
-float: center;
-height: 400px;
-margin-top: 150px;
-margin-left: 700px;
-padding-left: 20px;
-width:700px;
+  margin-left: 60px;
 }
 .deld{
 color: rgba(16, 2, 2, 0.563);
