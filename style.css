@@ -774,3 +774,55 @@ left: 0; /* Aligns the footer to the left */
 width: 100%;
 
 }
+/* Login css */
+.login{
+  display: inline-block;
+  float: right; 
+  background-color: #ffd700;
+  color: rgb(0, 0, 0);
+  padding: 8px;
+  border: none;
+  border-radius: 20px;
+  font-size: 15px;
+  width: 150px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: block;
+  margin-left: auto;
+  margin-right: 0;
+  margin-top: -15px;
+}
+#login{
+  background-color: #ffd700;
+  color: rgb(0, 0, 0);
+  padding: 8px;
+  border: none;
+  border-radius: 20px;
+  font-size: 15px;
+  width: 13%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: block;
+  margin-left: auto;
+  margin-right: 0;
+}
+#login:hover {
+  background-color: #dfe6c1;
+}
+body.dark-mode .login {
+  display: inline-block;
+    float: right;
+    background-color: #ffd700;
+    color: rgb(0, 0, 0);
+    padding: 8px;
+    border: none;
+    border-radius: 20px;
+    font-size: 15px;
+    width: 150px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: block;
+    margin-left: auto;
+    margin-right: 0;
+    margin-top: -15px;
+  }
