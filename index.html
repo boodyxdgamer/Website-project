@@ -7,13 +7,13 @@
 </head>
 <body>
     <button id="theme">Switch Theme</button>
-    <a href="registeration.html"><button id="theme" style="margin-top: 3px;">Login</button></a>
+    <a href="registeration.html"><button id="Login" style="margin-top: 3px;">Login</button></a>
     <div class="container">
         
         <!--added by abdelrahman to display the quantity from the product view page -->
-        <h2>Delivvery information</h2>
+        <h2>Delivery information</h2>
         
-        <label>Quantity Selected: <span id="displayQuantity"></span></pabel>
+        <label>Quantity Selected: <span id="displayQuantity"></span></label>
         
         <script>
             // Get parameters from URL
@@ -30,7 +30,7 @@
         <form onsubmit="alert('Your order has been placed successfully!'); return false; ">
             <div class="Products">
                 <!--added by Abdelrahman to display product name-->
-               
+            
         
                 <label>Product Name: <span id="displayProduct"></span></label>
         
@@ -77,15 +77,15 @@
                 <input type="text" id="Payment" required placeholder="0000 0000 0000 0000" minlength="16" maxlength="16" title="Enter Correct Visa Card Number">
                 <hr>
                 <label for="Valid_EXP">Card Valid EXP</label>
-                <input type="datetime" id="Valid_EXP" required placeholder="MM/YY" maxlength="5" title="Enter a Valid EXP">
+                <input type="text" id="Valid_EXP" required placeholder="MM/YY" maxlength="5" title="Enter a Valid EXP">
                 <hr>
                 <label for="cvv">CVV</label>
                 <input type="tel" id="cvv" required placeholder="123" minlength="3" maxlength="3" title="Enter Your Correct CVV">
             </div>
+            <button id="submit" type="submit">Submit</button>
+            <button id="reset" type="reset">Reset</button>
         </form>
     </div>
-        <button id="submit" type="submit">Submit</button>
-            <button id="reset" type="reset">Reset</button>
 <!--js for making visa feilds required only if Visa is chosen as a payment method-->
     <script>
         function toggleVisaFields(enable) {
