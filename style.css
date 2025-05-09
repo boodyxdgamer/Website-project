@@ -873,6 +873,9 @@ cursor: pointer;
   margin-left: 630px;
   margin-top: -296px;
 }
+body.dark-mode .w-d{
+  color: white;
+}
 
 
 
@@ -907,7 +910,8 @@ font-family: Roboto;
 font-weight: bold;
 left: 0; /* Aligns the footer to the left */ 
 width: 100%;
-}.footer {
+}
+.footer {
   background-color: #b1c8f7; /* Sets the background color of the footer */
   color: white; /* Sets the text color of the footer */
   text-align: center; /* Centers the text in the footer */
