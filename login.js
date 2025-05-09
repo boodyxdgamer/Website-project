@@ -1,18 +1,20 @@
 
-    document.querySelector("form").addEventListener("submit", function(event) {
-        event.preventDefault(); // Prevent default form submission
+   document.querySelector("form").addEventListener("submit", function(event) {
+    event.preventDefault(); // Stop default form submission
 
-        const username = document.getElementById("email-input").value.trim();
-        const password = document.getElementById("password-input").value.trim();
+    const enteredEmail = document.getElementById("email-input").value.trim();
+    const enteredPassword = document.getElementById("password-input").value.trim();
 
-        if (username && password) {
-            // Store username in localStorage (or sessionStorage)
-            localStorage.setItem("username", username);
+    // Get stored credentials
+    const savedEmail = localStorage.getItem("email");
+    const savedPassword = localStorage.getItem("password");
 
-            // Redirect to the homepage
-            window.location.href = "home.html";
-        } else {
-            alert('Please enter both email and password.');
-        }
-    });
-
+    if (enteredEmail === savedEmail && enteredPassword === savedPassword) {
+        // Login successful
+        alert("Login successful!");
+        window.location.href = "home.html";
+    } else {
+        // Login failed
+        alert("Invalid email or password.");
+    }
+});
