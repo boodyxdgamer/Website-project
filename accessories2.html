@@ -76,17 +76,26 @@
     <img class="main" src="Images/accessories2 (1).png" >
     </div>
     <div class="d2">
-     <h1>Controller Charging Station</h1>
-      <p style="color: gray;">SONY</p>
-      <hr>
-      <p>price: <strong style="color: red;">560 EGP </strong> <del class="deld">645 EGP</del> </p>
-    <label for="num">   Quantity : </label> 
-    <input id="num" type="number" min="1" max="10" placeholder="1" class="input">
-    <br>
-    <a href="index.html"><button class="but">ORDER NOW</button></a>
-    </div>
+             <!--edited to send data to checkout page by abdelrahman-->
+             <form     action="index.html" method="GET">
 
-
+                <h1 id="productName">Controller Charging Station </h1>
+                 <p style="color: gray;">SONY</p>
+                 <hr>
+                 <p>price: <strong style="color: red;">560 EGP </strong> <del class="deld">645 EGP</del> </p>
+                 <label for="num">   Quantity : </label> 
+                   <input type="number" id="num" name="quantity" min="1" value="1" class="input" required>
+                   
+               <input type="hidden" name="product" id="hiddenProductName">
+           
+               <br>
+               <button class="but" type="submit">ORDER NOW</button>
+               </FORM>
+               </div>
+           
+               <script>  document.getElementById("hiddenProductName").value = document.getElementById("productName").textContent;</script>
+               <!--End of the part edited by Abdelrahman-->
+    
 
     
     <script>
