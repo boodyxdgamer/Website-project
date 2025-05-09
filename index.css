@@ -31,24 +31,29 @@ h2 {
 }
 
 label {
-    display: block;
     margin-bottom: 8px;
     font-weight: bold;
     color: #555;
 }
 
-input, textarea {
+body.dark-mode label{
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #ffffff;
+
+}
+
+textarea {
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
     border: 1px solid #ccc;
     border-radius: 20px;
     font-size: 16px;
-}
-
-textarea {
     resize: vertical;
 }
+
 #reset,#submit {
     background-color: #ffd700;
     color: rgb(0, 0, 0);
@@ -60,7 +65,7 @@ textarea {
     cursor: pointer;
     transition: background-color 0.3s;
     margin-top: 30px;
-}
+    }
 #reset:hover {
     background-color: #dfe6c1;
 }
@@ -204,32 +209,47 @@ body.dark-mode .visa {
     color: #f5f5f5 ;
 }
 
+
 #visa:checked ~ .visa {
     display: block;
 }
 
 .visa-show {
     display: none;
+    margin-top: 19px;
 }
 
 #visa:checked ~ .visa-show {
     display: block;
 }
 
-.payment-option {
-    display: flex;
-    align-items: center;
-    margin-bottom: -15px;
+
+
+.input-visa {
+margin-left: 40px;
+margin-top: 12px;
 }
 
-#cash {
-    margin-left: -680px;
-    margin-top: 11px;
+.input-cash {
+margin-left: 33px;
 }
 
-
-#visa {
-    margin-left: -674px;
-    margin-top: 12px;
+#fullName ,#email, 
+#code, #address ,#phone{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-size: 16px;
 }
 
+#Payment,#Valid_EXP,#cvv{
+    width: 20%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-size: 16px;
+    display: block;
+}   

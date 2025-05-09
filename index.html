@@ -3,15 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <title>Delivery order</title>
+    <link rel ="icon" type="image/png" href="images/favicon.png" >
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
     <button id="theme">Switch Theme</button>
-    <a href="registeration.html"><button id="theme" style="margin-top: 3px;">Login</button></a>
+    <a href="registeration.html"><button id="theme" style="margin-top: 3px; float: right;">Login</button></a>
+    <br><br>
     <div class="container">
         
         <!--added by abdelrahman to display the quantity from the product view page -->
-        <h2>Checkout Summary</h2>
+        <h2>Delivery information</h2>
         
         <label>Quantity Selected: <span id="displayQuantity"></span></pabel>
         
@@ -63,13 +65,13 @@
         <h2>Choose Payment Method</h2>
         <hr>
         <div class="payment-option">
-            <label for="cash" class="cash">Cash</label>
-            <input type="radio" name="payment" id="cash">
+            <label for="cash" class="cash1">Cash</label>
+            <input  class="input-cash" type="radio" name="payment" id="cash">
         </div>
         
         <div class="payment-option">
-            <label for="visa" class="visa">Visa</label>
-            <input type="radio" name="payment" id="visa">
+            <label for="visa" class="visa1">Visa</label>
+            <input  class="input-visa" type="radio" name="payment" id="visa">
             
             
             <div class="visa-show">
@@ -81,43 +83,11 @@
                 <hr>
                 <label for="cvv">CVV</label>
                 <input type="tel" id="cvv" required placeholder="123" minlength="3" maxlength="3" title="Enter Your Correct CVV">
-            <hr>
-            <label for="fullName" class="NameOf">Full name</label>
-            <input type="text" id="fullName" name="fullName" required placeholder="Smith" title="Enter Your Full Name">
-            <hr>
-            <label for="address" class="NameOf">Address</label>
-            <textarea id="address" name="address" rows="3" required placeholder="Egypt Cairo 25 Street" title="Enter Your Address"></textarea>
-            <hr>
-            <label for="email" class="NameOf">E-mail</label>
-            <input type="email" id="email" name="email" required placeholder="abcdefghi@gmail.com" title="Enter Correct Email">
-            <hr>
-            <label for="phone" class="NameOf">Mobile number</label>
-            <input type="tel" id="phone" name="phone" required placeholder="01234567890" minlength="11" maxlength="11" title="Enter Correct Mobile Number">
-            <hr>
-            <h2>Choose Payment Method</h2>
-            <hr>
-            <div class="payment-option">
-                <label for="cash">Cash</label>
-                <input type="radio" name="payment" id="cash" onchange="toggleVisaFields(false)">
             </div>
-            <div class="payment-option" >
-                <label for="visa">Visa</label>
-                <input type="radio" name="payment" id="visa" required onchange="toggleVisaFields(true)">
-                <div class="visa-show">
-                    <label for="Payment">Visa Card</label>
-                    <input type="text" id="Payment" placeholder="0000 0000 0000 0000" minlength="16" maxlength="16">
-                    <hr>
-                    <label for="Valid_EXP">Card Valid EXP</label>
-                    <input type="text" id="Valid_EXP" placeholder="MM/YY" maxlength="5">
-                    <hr>
-                    <label for="cvv">CVV</label>
-                    <input type="tel" id="cvv" placeholder="123" minlength="3" maxlength="3">
-                </div>
-            </div>
-            <button id="submit" type="submit">Submit</button>
-            <button id="reset" type="reset">Reset</button>
         </form>
     </div>
+        <button id="submit" type="submit">Submit</button>
+            <button id="reset" type="reset">Reset</button>
 <!--js for making visa feilds required only if Visa is chosen as a payment method-->
     <script>
         function toggleVisaFields(enable) {
