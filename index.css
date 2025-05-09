@@ -240,7 +240,7 @@ margin-left: 33px;
 }
 
 #Payment,#Valid_EXP,#cvv{
-    width: 20%;
+    width: 15%;
     padding: 10px;
     margin-bottom: 20px;
     border: 1px solid #ccc;
