@@ -342,7 +342,9 @@ body.dark-mode .catigory:hover  {
 }
 body.dark-mode .heading {
   
-  font-family: Roboto ;  
+ font-family: Roboto ,sans-serif;
+  text-align: center;
+  margin-top: 35px;
   color: #ffffff;
 }
 
