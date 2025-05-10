@@ -29,7 +29,7 @@
         </script>
         <!--end of added by abdelrahman-->
         <hr>
-        <form onsubmit="alert('Your order has been placed successfully!'); return false; ">
+                        <form onsubmit="alert('Your order has been placed successfully!');">
             <div class="Products">
                 <!--added by Abdelrahman to display product name-->
             
@@ -86,7 +86,7 @@
             </div>
             <button id="submit" type="submit">Submit</button>
             <button id="reset" type="reset">Reset</button>
-        </form>
+                        </form>
     </div>
 <!--js for making visa feilds required only if Visa is chosen as a payment method-->
     <script>
@@ -103,6 +103,14 @@
         const toggleBtn = document.getElementById('theme');
         toggleBtn.addEventListener('click', () => {
         document.body.classList.toggle('dark-mode');});
+        document.getElementById('cash').addEventListener('change', () => {
+    toggleVisaFields(false);
+});
+
+document.getElementById('visa').addEventListener('change', () => {
+    toggleVisaFields(true);
+});
     </script>
+    
 </body>
 </html>
