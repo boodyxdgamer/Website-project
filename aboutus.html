@@ -106,11 +106,19 @@
           <p class="heading">Meet the amazing team behind this project!</p>
   <!-- Music Player -->
   <div class="music-container">
-      <audio controls autoplay loop>
-          <source src="music.mp3" type="audio/mpeg">
+      <audio id="music" controls autoplay loop >
+          <source src="music.mp3" type="audio/mpeg" >
           Your browser does not support the audio element.
       </audio>
   </div>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const audio = document.getElementById("music");
+    
+        // Set volume to 50% (0.5)
+        audio.volume = 0.2;
+    });
+    </script>
   <hr>
           <!-- WORKSHEET Table -->
           <table border="1" class="worksheet-table">
