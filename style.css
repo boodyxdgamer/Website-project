@@ -38,6 +38,8 @@
   font-family: poppins, sans-serif;
   font-size: 14px;
   overflow: hidden; /* Hides text that scrolls outside */
+  z-index: 1000; /* Ensures annoucment bar is above other content */
+
 }
 /*navigaion bar*/
 .nav div h2{
