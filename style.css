@@ -12,6 +12,7 @@
   width: 100%;
   margin-top: 30px; 
   height: 170px;  
+  z-index: 1000; /* Ensures header is above other content */
 }
 .main-header h1 {
   font-weight: bolder;
@@ -249,7 +250,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  color: #333333;
+  color: #000000;
   padding-top: 200px; /* Adjust this value to match the height of your header and nav bar */
   margin: 0;
   padding-left: 0;
@@ -962,14 +963,9 @@ body.dark-mode .login {
  
   /* CSS for music container */
   .music-container {
-      width: 80%;
-    justify-self: center;
-    border-collapse: collapse;
-    margin: 20px 0;
-    text-align: center;
-    
+   text-align: center;
   }
-
+  
   /* CSS for table */
   .worksheet-table {
     width: 80%;
@@ -977,4 +973,20 @@ body.dark-mode .login {
     border-collapse: collapse;
     margin: 20px 0;
     text-align: center;
+    height: 700px;
   }
+  .worksheet-table th {
+    background-color: #6275946c;
+  height: 100px;
+  font-size: 50px;
+  font-family: Roboto;
+  }
+  .worksheet-table {
+    table-layout: fixed;
+  
+}.names {
+  width: 30%; /* Adjust as needed */
+  font-size: 50px;
+  font-family: Roboto;
+  font-weight: bold;
+}

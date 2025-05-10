@@ -101,43 +101,41 @@
       <br >
       
       <main class="content">
-          
+          <!-- Music Player -->
+  <div class="music-container">
+    <video id="music" controls autoplay loop >
+        <source src="music.mp3" type="audio/mp3" >
+        Your browser does not support the audio element.
+    </video>
+</div>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+      const audio = document.getElementById("music");
+  
+      // Set volume to 50% (0.5)
+      audio.volume = 0.2;
+  });
+  </script>
           <h1 class="heading">About Us</h1>
           <p class="heading">Meet the amazing team behind this project!</p>
-  <!-- Music Player -->
-  <div class="music-container">
-      <audio id="music" controls autoplay loop >
-          <source src="music.mp3" type="audio/mpeg" >
-          Your browser does not support the audio element.
-      </audio>
-  </div>
-  <script>
-    document.addEventListener("DOMContentLoaded", function() {
-        const audio = document.getElementById("music");
-    
-        // Set volume to 50% (0.5)
-        audio.volume = 0.2;
-    });
-    </script>
+  
   <hr>
           <!-- WORKSHEET Table -->
           <table border="1" class="worksheet-table">
-              <thead>
+           
                   <tr>
-                      <th>Name</th>
+                      <th class="names">Name</th>
                       <th>Role</th>
                   </tr>
-              </thead>
-              <tbody>
-                  <tr><td><pre>Abdelrahman</pre></td><td><pre>Lead Developer</pre></td></tr>
-                  <tr><td><pre>Member 2</pre></td><td><pre>UI/UX Designer</pre></td></tr>
-                  <tr><td><pre>Member 3</pre></td><td><pre>Front-End Developer</pre></td></tr>
-                  <tr><td><pre>Member 4</pre></td><td><pre>Back-End Developer</pre></td></tr>
-                  <tr><td><pre>Member 5</pre></td><td><pre>Content Creator</pre></td></tr>
-                  <tr><td><pre>Member 6</pre></td><td><pre>Marketing Specialist</pre></td></tr>
-                  <tr><td><pre>Member 7</pre></td><td><pre>Project Manager</pre></td></tr>
-                  <tr><td><pre>Member 8</pre></td><td><pre>QA Tester</pre></td></tr>
-              </tbody>
+                  <tr><td class="names"><pre>Abdelrahman</pre></td><td><pre>Lead Developer</pre></td></tr>
+                  <tr><td class="names"><pre>Member 2</pre></td><td><pre>UI/UX Designer</pre></td></tr>
+                  <tr><td class="names"><pre>Member 3</pre></td><td><pre>Front-End Developer</pre></td></tr>
+                  <tr><td class="names"><pre>Member 4</pre></td><td><pre>Back-End Developer</pre></td></tr>
+                  <tr><td class="names"><pre>Member 5</pre></td><td><pre>Content Creator</pre></td></tr>
+                  <tr><td class="names"><pre>Member 6</pre></td><td><pre>Marketing Specialist</pre></td></tr>
+                  <tr><td class="names"><pre>Member 7</pre></td><td><pre>Project Manager</pre></td></tr>
+                  <tr><td class="names"><pre>Member 8</pre></td><td><pre>QA Tester</pre></td></tr>
+             
           </table>
       </main>
     </div>

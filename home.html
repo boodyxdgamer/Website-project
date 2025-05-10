@@ -23,27 +23,7 @@
       </a>
       <h1>INVINCIBLE</h1>
       <a href="registeration.html"><button id="login" class="login">Login</button></a>
-      <script>
-        document.addEventListener("DOMContentLoaded", function () {
-          const login = document.getElementById("login");
-          const isLoggedIn = localStorage.getItem("email"); // Check if email exists in localStorage
-
-          if (isLoggedIn) {
-            login.textContent = "Logout";
-            login.addEventListener("click", function () {
-              localStorage.removeItem("email");
-              localStorage.removeItem("username");
-              localStorage.removeItem("password");
-              window.location.href = "login.html"; // Redirect to login page
-            });
-          } else {
-            login.textContent = "Login";
-            login.addEventListener("click", function () {
-              window.location.href = "login.html"; // Redirect to login page
-            });
-          }
-        });
-      </script>
+    
 
       <h2 style="
         position: absolute;

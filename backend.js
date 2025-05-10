@@ -1,6 +1,7 @@
 // dark theme js
 
-    const toggleBtn = document.getElementById('theme');
+    
+const toggleBtn = document.getElementById('theme');
     
 // Check for saved user preference, if any, on page load
 if (localStorage.getItem('darkMode') === 'enabled') {
@@ -59,3 +60,23 @@ function redirectToPage(page) {
         greetingEl.textContent = "Hi, User!"; // Default message if no user is logged in
     }
 });
+// logout function
+document.addEventListener("DOMContentLoaded", function () {
+    const login = document.getElementById("login");
+    const isLoggedIn = localStorage.getItem("email"); // Check if email exists in localStorage
+
+    if (isLoggedIn) {
+      login.textContent = "Logout";
+      login.addEventListener("click", function () {
+        localStorage.removeItem("email");
+        localStorage.removeItem("username");
+        localStorage.removeItem("password");
+        window.location.href = "login.html"; // Redirect to login page
+      });
+    } else {
+      login.textContent = "Login";
+      login.addEventListener("click", function () {
+        window.location.href = "login.html"; // Redirect to login page
+      });
+    }
+  });
