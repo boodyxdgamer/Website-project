@@ -993,3 +993,9 @@ body.dark-mode .login {
   font-weight: bold;
   text-align: center;
 }
+td{
+  font-size: 30px;
+  font-family: sans-serif;
+  
+  text-align: center;
+}
