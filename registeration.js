@@ -2,11 +2,17 @@ document.querySelector("form").addEventListener("submit", function(event) {
     event.preventDefault(); // Prevent form from submitting
 
     const username = document.getElementById("firstname-input").value.trim();
+    const email = document.getElementById("email-input").value.trim();
     const password = document.getElementById("password-input").value;
     const repeatPassword = document.getElementById("repeat-password-input").value;
 
     if (!username) {
         alert("Please enter a username.");
+        return;
+    }
+
+    if (!email) {
+        alert("Please enter an email.");
         return;
     }
 
@@ -20,9 +26,11 @@ document.querySelector("form").addEventListener("submit", function(event) {
         return;
     }
 
-    // Save username to localStorage
+    // Save credentials to localStorage
     localStorage.setItem("username", username);
+    localStorage.setItem("email", email);
+    localStorage.setItem("password", password);
 
-    // Redirect to home page
-    window.location.href = "home.html";
+    alert("Signup successful!");
+    window.location.href = "login.html";
 });

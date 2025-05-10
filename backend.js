@@ -1,5 +1,4 @@
- 
-    // dark theme js
+// dark theme js
 
     const toggleBtn = document.getElementById('theme');
     
@@ -48,16 +47,15 @@ function redirectToPage(page) {
     window.location.href = page;
 }
 
-window.addEventListener("DOMContentLoaded", () => {
-    // Retrieve the username from localStorage
-    const name = localStorage.getItem("username");
 
-    // If the username exists, update the greeting
-    if (name) {
-        const greetingEl = document.getElementById("greeting");
-        greetingEl.textContent = `Hello, ${name}!`; // Display "Hello, [username]"
+ // Dynamically update the greeting message
+ window.addEventListener("DOMContentLoaded", () => {
+    const currentUsername = localStorage.getItem("currentUsername"); // Retrieve the logged-in username
+    const greetingEl = document.getElementById("greeting");
+
+    if (currentUsername) {
+        greetingEl.textContent = `Hi, ${currentUsername}!`; // Update the greeting message
+    } else {
+        greetingEl.textContent = "Hi, User!"; // Default message if no user is logged in
     }
 });
-       
-
-    
