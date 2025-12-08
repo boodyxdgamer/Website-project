@@ -16,7 +16,7 @@ document.querySelector("form").addEventListener("submit", function(event) {
         // Update the username in localStorage for the current session
         localStorage.setItem("currentUsername", savedUsername);
 
-        window.location.href = "home.html";
+        window.location.href = "index.html";
     } else {
         // Login failed
         alert("Invalid email or password.");
