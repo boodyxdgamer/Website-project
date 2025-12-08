@@ -372,15 +372,16 @@ body.dark-mode .feedbackh2{
 .contact-info {
   font-size: 18px;
   color: #111;
-  display: fixed;
-  
+  position: relative;   /* or fixed if you want it pinned */
   padding: 20px;
   width: fit-content;
 }
 
 .contact-info ul {
   padding-left: 30px;
+  list-style-position: inside; /* makes bullets part of the text block */
 }
+
 body.dark-mode .contact-info ul {
   padding-left: 30px;
   color: #e6e6e6;
@@ -388,6 +389,26 @@ body.dark-mode .contact-info ul {
 
 .contact-info li {
   padding-bottom: 30px;
+  user-select: text; /* ensure list text is selectable */
+}
+
+/* Social icons inside contact-info */
+.contact-info li a {
+  text-decoration: none;      /* remove underline */
+  color: #333;                /* default icon/text color */
+  font-size: 22px;            /* icon size */
+  margin-left: 10px;          /* spacing between icons */
+  display: inline-block;      /* ensures clickable area */
+  transition: color 0.3s ease;
+}
+
+.contact-info li a:hover {
+  color: #007bff;             /* hover color (blue) */
+}
+
+.contact-info li i {
+  margin-right: 5px;          /* small space if you add text after icon */
+  vertical-align: middle;     /* aligns icons nicely with text */
 }
 
 /* Contact Form */
