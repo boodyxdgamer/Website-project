@@ -234,7 +234,7 @@ body.dark-mode .srchbutton{
     margin-top: 10px; /* Adds space above the button */
     margin-bottom: 10px; /* Adds space between buitton and the border */
     width: 150px; /* Optional: makes button full width of container */
-    height: 70px; /* Sets the height of the button */
+    height: 60px; /* Sets the height of the button */
     font-family: Roboto;
     font-weight: bold;
     color: black; /* Text color of the button */
