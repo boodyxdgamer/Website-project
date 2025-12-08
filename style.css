@@ -1,85 +1,84 @@
 /* Light theme for the header */
 
+/* Header */
 .main-header {
-  background-color:#005bea; 
+  background-color: #005bea;
   color: white;
   text-align: center;
-  font-family: Roboto ;
+  font-family: Roboto;
   font-weight: bold;
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  margin-top: 30px; 
-  height: 170px;  
+  width: 100%; /* Full width */
+  margin-top: 1.875rem; /* 30px */
+  height: 10.625rem; /* 170px */
   z-index: 1000; /* Ensures header is above other content */
 }
 .main-header h1 {
   font-weight: bolder;
-  font-family: roboto;
-  margin-top: 10px; 
-  margin-bottom: 10px;
-  margin-left: 210px;
- 
+  font-family: Roboto;
+  margin-top: 0.625rem; /* 10px */
+  margin-bottom: 0.625rem; /* 10px */
+  margin-left: 13.125rem; /* 210px */
 }
-/* ANNOUNCEMENT BAR */
+
+/* Announcement Bar */
 .announcement-bar {
   position: fixed; /* Makes it stick to top */
   top: 0;
   left: 0;
-  width: 100%;
+  width: 100%; /* Full width */
   background: #ffd700;
   color: black;
-  padding: 4px 0; /* Adds padding to the top and bottom */
+  padding: 0.25rem 0; /* 4px top and bottom */
   text-align: center;
   align-items: center;
   font-weight: bolder;
-  height: 30px; /* Sets the height of the announcement bar */
-  font-family: poppins, sans-serif;
-  font-size: 14px;
+  height: 1.875rem; /* 30px */
+  font-family: Poppins, sans-serif;
+  font-size: 0.875rem; /* 14px */
   overflow: hidden; /* Hides text that scrolls outside */
-  z-index: 1000; /* Ensures annoucment bar is above other content */
-
+  z-index: 1000; /* Ensures announcement bar is above other content */
 }
+
 /*navigaion bar*/
-.nav div h2{
-  float: left; 
-  margin-top: 5px;
- 
-  
-}
-.nav a{
-color:rgb(228, 228, 223);
-text-decoration: none;
-padding: 3%;
-padding-left: 100px;
-padding-right: 100px;
-
-}
-.nav a:hover{
-padding: 3%;
-padding-left: 100px;
-padding-right: 100px;
-border-radius: 5px;
-background-color: hsl(203, 100%, 27%);
-color:hsl(0, 0%, 100%);
-}
-.nav{
-display: inline-block;
-text-align: center;
-margin : 0 auto;
-
-
-
+/* Navigation Bar */
+.nav div h2 {
+  float: left;
+  margin-top: 0.3125rem; /* 5px */
 }
 
-.logo{
+.nav a {
+  color: rgb(228, 228, 223);
+  text-decoration: none;
+  padding: 3%; /* Relative to parent container */
+  padding-left: 6.25rem; /* 100px */
+  padding-right: 6.25rem; /* 100px */
+}
+
+.nav a:hover {
+  padding: 3%; /* Relative to parent container */
+  padding-left: 6.25rem; /* 100px */
+  padding-right: 6.25rem; /* 100px */
+  border-radius: 0.3125rem; /* 5px */
+  background-color: hsl(203, 100%, 27%);
+  color: hsl(0, 0%, 100%);
+}
+
+.nav {
+  display: inline-block;
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* Logo */
+.logo {
   position: absolute;
-  left: 20px; /* Adjust distance from left */
-  top: 85px; /* Center vertically */
+  left: 1.25rem; /* 20px */
+  top: 5.3125rem; /* 85px */
   transform: translateY(-50%); /* Adjust for logo height */
-  width: 170px; /* Maintain aspect ratio */
-  
+  width: 10.625rem; /* 170px */
   background-image: url('Images/favicon.png'); /* Replace with your logo image */
 }
 .scrolling-text {
@@ -235,7 +234,7 @@ body.dark-mode .srchbutton{
     margin-top: 10px; /* Adds space above the button */
     margin-bottom: 10px; /* Adds space between buitton and the border */
     width: 150px; /* Optional: makes button full width of container */
-    height: 50px; /* Sets the height of the button */
+    height: 60px; /* Sets the height of the button */
     font-family: Roboto;
     font-weight: bold;
     color: black; /* Text color of the button */
@@ -247,17 +246,18 @@ body.dark-mode .srchbutton{
   }
 
 
+/* Main Layout */
 body {
   background-image: url('Images/whitebg.jpg'); /* Replace with your image path */
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   color: #000000;
-  padding-top: 200px; /* Adjust this value to match the height of your header and nav bar */
+  padding-top: 12.5rem; /* 200px */
   margin: 0;
   padding-left: 0;
   transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transitions */
-  height: 1080px; /* Full height */
+  height: 100vh; /* Full height */
   display: flex;
   flex-direction: column;
   min-height: 100vh; /* Full height of the viewport */
@@ -277,22 +277,23 @@ body.dark-mode {
   color: #f5f5f5;
 }
 
+/* Category Section */
 .catigory {
   display: inline-block;
   vertical-align: top;
   align-items: center; /* Centers content horizontally within each category */
   text-align: center; /* Centers text */
-  border: #005bea 2px solid; /* Adds border around each category */
-  border-radius: 20px; /* Rounds the corners of the border */
-  width: 500px; /* Sets a fixed width for each category */
-  height: 620px; /* Sets a fixed height for each category */
+  border: #005bea 0.125rem solid; /* 2px */
+  border-radius: 1.25rem; /* 20px */
+  width: 31.25rem; /* 500px */
+  height: 38.75rem; /* 620px */
   font-family: sans-serif; /* Sets the font family for the category text */
   font-weight: bold; /* Makes the font bolder */
-  font-size: 20px; /* Sets the font size for the category text */
+  font-size: 1.25rem; /* 20px */
   padding: auto; /* Adds padding inside the category box */
   color: black;
-  margin: 50px; /* Adds space between each category box */  
-  background-color:transparent; 
+  margin: 3.125rem; /* 50px */
+  background-color: transparent;
 }
 body.dark-mode .catigory {
   display: inline-block;
@@ -313,8 +314,8 @@ body.dark-mode .catigory {
   
   
 .catigory:hover  {
-  border: #005bea 5px solid; /* Thickens the border */
-
+  border: #005bea 0.3125rem solid; /* 5px */
+  transition-duration: 0.1s;
 } 
 body.dark-mode .catigory:hover  {
   border: #005bea 5px solid; /* Thickens the border */  
@@ -323,10 +324,10 @@ body.dark-mode .catigory:hover  {
   
   .catigory-img {
     margin: auto;
-    margin-bottom: 10px; /* Adds space between image and button */
+    margin-bottom: 0.625rem; /* 10px */
     display: block; /* Ensures the image is treated as a block element */
-    width: 400px; /* Sets the width of the image */
-    height: 450px; /* Sets the height of the image */
+    width: 25rem; /* 400px */
+    height: 28.125rem; /* 450px */
   }
   
 
@@ -371,15 +372,16 @@ body.dark-mode .feedbackh2{
 .contact-info {
   font-size: 18px;
   color: #111;
-  display: fixed;
-  
+  position: relative;   /* or fixed if you want it pinned */
   padding: 20px;
   width: fit-content;
 }
 
 .contact-info ul {
   padding-left: 30px;
+  list-style-position: inside; /* makes bullets part of the text block */
 }
+
 body.dark-mode .contact-info ul {
   padding-left: 30px;
   color: #e6e6e6;
@@ -387,6 +389,26 @@ body.dark-mode .contact-info ul {
 
 .contact-info li {
   padding-bottom: 30px;
+  user-select: text; /* ensure list text is selectable */
+}
+
+/* Social icons inside contact-info */
+.contact-info li a {
+  text-decoration: none;      /* remove underline */
+  color: #333;                /* default icon/text color */
+  font-size: 22px;            /* icon size */
+  margin-left: 10px;          /* spacing between icons */
+  display: inline-block;      /* ensures clickable area */
+  transition: color 0.3s ease;
+}
+
+.contact-info li a:hover {
+  color: #007bff;             /* hover color (blue) */
+}
+
+.contact-info li i {
+  margin-right: 5px;          /* small space if you add text after icon */
+  vertical-align: middle;     /* aligns icons nicely with text */
 }
 
 /* Contact Form */
@@ -1015,4 +1037,58 @@ body.dark-mode #login{
 body.dark-mode #login:hover{
     background-color: #484742;
     color: #f5f5f5;
+}
+
+/* Admin page css */
+.admin-inventory {
+  padding: 20px;
+}
+
+.inventory-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.inventory-table th, .inventory-table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+.inventory-table th {
+  background-color: #f4f4f4;
+}
+
+.edit-btn, .delete-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  margin: 0 5px;
+}
+
+.edit-btn:hover {
+  color: #007bff;
+}
+
+.delete-btn:hover {
+  color: #dc3545;
+}
+
+.add-product-form input {
+  margin: 5px;
+  padding: 8px;
+}
+
+.add-product-form button {
+  padding: 8px 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.add-product-form button:hover {
+  background-color: #0056b3;
 }
