@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin - Inventory Management</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <!-- Announcement bar -->
+  <div class="announcement-bar">
+    <div class="scrolling-text">
+      🛠 Admin Panel: Manage Inventory
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="main-header">
+    <button id="theme" class="themebutton">Switch Theme</button>
+    <a href="index.html">
+      <img src="images/favicon.png" alt="Logo" class="logo">
+    </a>
+    <h1>INVINCIBLE Admin</h1>
+    <a href="login.html"><button id="logout" class="login">Logout</button></a>
+    <nav class="nav">
+      <div>
+        <h2 class="f1"><a href="index.html" title="takes you to the Home page">Home</a></h2>
+        <h2 class="f2"><a href="products.html" title="Browse through our products page">Products</a></h2>      
+        <h2 class="f3"><a href="inventory.html">Inventory</a></h2>
+ 
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Admin Content -->
+  <div class="admin-inventory">
+    <h2>Inventory Management</h2>
+    <table class="inventory-table">
+      <thead>
+        <tr>
+          <th>Product ID</th>
+          <th>Name</th>
+          <th>Stock</th>
+          <th>Price</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>001</td>
+          <td>PlayStation 5 Controller</td>
+          <td>120</td>
+          <td>$69.99</td>
+          <td>
+            <button class="edit-btn"><i class="fas fa-edit"></i></button>
+            <button class="delete-btn"><i class="fas fa-trash"></i></button>
+          </td>
+        </tr>
+        <tr>
+          <td>002</td>
+          <td>Xbox Series X</td>
+          <td>45</td>
+          <td>$499.99</td>
+          <td>
+            <button class="edit-btn"><i class="fas fa-edit"></i></button>
+            <button class="delete-btn"><i class="fas fa-trash"></i></button>
+          </td>
+        </tr>
+        <!-- More rows here -->
+      </tbody>
+    </table>
+
+    <!-- Add New Product Form -->
+    <h3>Add New Product</h3>
+    <form class="add-product-form">
+      <input type="text" name="productName" placeholder="Product Name" required>
+      <input type="number" name="stock" placeholder="Stock Quantity" required>
+      <input type="text" name="price" placeholder="Price" required>
+      <button type="submit">Add Product</button>
+    </form>
+  </div>
+
+  <!-- Footer -->
+  <footer    style="
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    background-color: #f4f4f4;
+  
+  ">
+    <p class="footer-text">© 2025 INVINCIBLE Admin Panel</p>
+  </footer>
+</body>
+</html>
